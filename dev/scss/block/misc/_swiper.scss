@@ -1,0 +1,58 @@
+.swiper-container {
+    width: 100%;
+    height: 630px;
+}
+.hero-text-holder {
+	position: relative;
+	height: 100%;
+}
+
+.hero-text {
+	background-color: rgba(0,0,0,.7);
+	padding: 40px 25px 65px 25px;
+	position: absolute;
+	bottom: 4%;
+	right: 0;
+	width: 50%;
+	z-index: 2;
+	box-sizing: border-box;
+	h2 {
+		color: $main-color;
+	}
+	p {
+		color: white;
+	}
+	@media screen and (max-width: 667px) {
+		width: 100%;			
+	}		
+}
+
+.hero-slider__controls {
+	margin-top: -100px;
+	z-index: 5;
+}
+
+.slider-controls {
+	position: absolute;
+}
+
+.aswiper-button-prev,
+.aswiper-button-next {
+	color: $main-color;
+}
+.swiper-slide {
+	position: relative;
+	background-size: cover;
+	&:after {
+			content: "";
+			opacity: .4;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			@include gradient_gray-yellow;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+		}
+}

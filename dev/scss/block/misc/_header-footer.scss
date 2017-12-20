@@ -1,0 +1,263 @@
+#header {
+	display: block;
+	min-height: 152px;
+	background-image: url(/img/bg/bg-header.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@media screen and (max-width: 960px) {
+		& {
+			display: none;
+		}
+	}
+}
+
+.info {	
+
+	.info-links {
+		float: left;
+		ul {
+			li {
+				list-style: none;
+				float: left;
+				margin-right: 20px;
+				&:first-child {
+					background-image: url(../img/icons/icon-calendar.png);
+					background-repeat: no-repeat;
+					background-position: left center;
+					padding-left: 33px;
+					&:hover {
+						background-image: url(../img/icons/icon-calendar_active.png);
+					}
+				}
+			}
+		}
+
+		a {
+			color: #fff;
+			text-decoration: none;
+			display: block;
+			@include font-900-italic;
+			font-size: 20px;
+			text-transform: uppercase;
+			&:hover {
+				color: $main-color;
+			}
+			@media screen and (min-width: 961px) and (max-width: 1050px) {
+				& {
+					font-size: 16px;
+				}
+			}
+		}
+		// .info-link_timetable:hover .icon_calendar {
+		// 	background-position: -34px -28px;
+		// }	
+		// .info-link_timetable {
+		// 	background-image: url(../img/icons/icon-calendar.png);
+		// 	background-repeat: no-repeat;
+		// 	background-position: left center;
+		// 	padding-left: 30px;
+		// 	&:hover {
+		// 		background-image: url(../img/icons/icon-calendar_active.png);
+		// 	}
+		// }
+	}
+	.info-links_vertical {
+		ul {
+			li {
+				display: block;
+				float: none;
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.info-links_vertical {
+		ul {
+			li:last-child {
+				margin-left: 32px;
+			}
+		}		
+	}
+
+	.info-contacts {
+		float: right;
+		display: table;
+
+		.info-contacts__location {
+			display: table-cell;
+    		vertical-align: middle;
+    		padding-right: 10px;
+    		
+			@include text-font;
+			color: $main-color;	
+			font-size: 16px;
+
+			@media screen and (min-width: 961px) and (max-width: 1050px) {
+				& {
+					font-size: 14px;
+				}
+			}				
+		}
+
+		.info-contacts__phone {
+			@include font-900-normal;
+			color: #fff;
+			font-size: 24px;
+			.phone-code {
+				color: $phone-color;
+			}
+			@media screen and (min-width: 961px) and (max-width: 1050px) {
+				& {
+					font-size: 20px;
+				}
+			}
+		}	
+	}
+
+
+	.info-contacts_vertical	{
+
+		.info-contacts__location,
+		.info-contacts__phone {
+			float: right;
+			@media screen and (max-width: 350px) {
+					float:left;
+			}
+		}
+		.info-contacts__phone {
+			margin-top: 20px;
+
+		}
+	}
+}
+.info_header {
+	margin-top: 50px;
+}
+.info_footer {
+	margin-top: 74px;
+}
+
+
+.menu_header {
+	margin-top: 24px;
+}
+.menu_footer {
+	margin-top: 74px;
+}
+.menu {
+	
+	.main-menu {
+		li {
+			float: left;
+			margin-right: 34px;
+			list-style: none;
+			@media screen and (min-width: 961px) and (max-width: 1050px) {
+				& {
+					margin-right: 24px !important;
+				}
+			}
+		}		 
+	}
+
+	.main-menu {
+		a {
+			position: relative;			
+			@include font-900-italic;
+			color: $main-color;
+			text-decoration: none;
+			font-size: 18px;
+
+			&:after {
+				display: block;
+				content: "";
+				position: absolute;
+				height: 2px;
+				width: 0%;
+				bottom: -3px;
+				background-color: $main-color;
+				transition: width 100ms;
+			}
+
+			&:hover:after {
+				width: 100%;
+			}
+		}
+	}
+	.main-menu_horizontal {
+		float: left;
+		line-height: 38px;
+		.btn {
+			float: right;
+		}
+	}
+
+	.main-menu_vertical li {
+		display: block;
+		float: none;
+	}
+}
+
+#footer {
+	min-height: 276px;	
+	background-image: url(/img/bg/bg-footer.png);
+	background-repeat: repeat-y;
+	background-size: cover;
+	padding-bottom: 30px;
+	@media screen and (max-width: 350px) {
+			padding-left:15px;
+		}
+	.info-contacts_vertical {
+		.info-contacts__location {
+			text-align: right;
+			@media screen and (max-width: 350px) {
+				text-align:left;
+			}
+		}
+	}
+	.col-3:first-child {
+		@media screen and (max-width: 960px) {
+			width: 100%;
+		}		
+	}
+	.info.col-3 {
+		@media screen and (max-width: 960px) {
+			width: 32%;
+		}
+		@media screen and (max-width: 667px) {
+			display: none;
+		}
+	}
+	.info.col-4 {
+		@media screen and (max-width: 960px) {
+			width: 40%;
+		}
+		@media screen and (max-width: 667px) {
+			width: 68%;
+			float: right;
+			margin-top: 10px;
+		}
+		@media screen and (max-width: 350px) {
+			width: 100%;
+			float: left;
+			margin-top: 10px;
+		}
+	}
+	.menu.col-2 {
+		@media screen and (max-width: 667px) {
+			width: 20%;
+			margin-top: 10px;
+		}
+		@media screen and (max-width: 350px) {
+			width: 100%;
+			float: left;
+			margin-top: 10px;
+		}
+	}
+	.btn {
+		@media screen and (max-width: 350px) {
+			float: left;
+		}
+		
+	}
+
+}

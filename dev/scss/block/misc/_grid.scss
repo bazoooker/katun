@@ -1,0 +1,141 @@
+/*====== grid ====== */
+html, body {
+  height: 100%;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+#content {
+  flex: 1 0 auto;
+  @media screen and (max-width: 960px) {
+    padding-top: 50px;
+  }
+}
+
+body {
+  background-image: url(/img/bg/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 50%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+.col,
+.tile {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+.row {
+	overflow: hidden;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 95%;
+    padding: 0; 
+  }
+}
+
+
+// @media (ax-width: 550px) {
+//   .container {
+//     width: 80%; }
+
+  /*тайлы - для создания сетки без отступов м/у элементами. все элементы прижаты друг к другу ака windows tiles*/
+
+  .tile { margin: 0; }
+
+  .tile-1               { width: 8.3333%;  }
+  .tile-2               { width: 16.6667%; }
+  .tile-3               { width: 25%;      }
+  .tile-4               { width: 33.3333%; }
+  .tile-5               { width: 41.6667%; }
+  .tile-6               { width: 50%;      }
+  .tile-7               { width: 58.3333%; }
+  .tile-8               { width: 66.6667%; }
+  .tile-9               { width: 75%;      }
+  .tile-10              { width: 83.3333%; }
+  .tile-11              { width: 91.6667%; }
+  .tile-12              { width: 100%;     }
+
+  /* Offsets */
+  .offset-tile-1        { width: 8.3333%;  }
+  .offset-tile-2        { width: 16.6667%; }
+  .offset-tile-3        { width: 25%;      }
+  .offset-tile-4        { width: 33.3333%; }
+  .offset-tile-5        { width: 41.6667%; }
+  .offset-tile-6        { width: 50%;      }
+  .offset-tile-7        { width: 58.3333%; }
+  .offset-tile-8        { width: 66.6667%; }
+  .offset-tile-9        { width: 75%;      }
+  .offset-tile-10       { width: 83.3333%; }
+  .offset-tile-11       { width: 91.6667%; }
+
+
+/*колонки - для создания сетки с отступами между колонок. Крайние элементы - прижаты к бокам контейнера*/
+
+  .col {  margin-left: 4%; }
+  .col:first-child,
+  .col:first-child {
+    margin-left: 0; }
+
+  .col-1                { width: 4.66666666667%; }
+  .col-2                { width: 13.3333333333%; }
+  .col-3                { width: 22%;            }
+  .col-4                { width: 30.6666666667%; }
+  .col-5                { width: 39.3333333333%; }
+  .col-6                { width: 46%;            }
+  .col-7                { width: 56.6666666667%; }
+  .col-8                { width: 65.3333333333%; }
+  .col-9                { width: 74.0%;          }
+  .col-10               { width: 82.6666666667%; }
+  .col-11               { width: 91.3333333333%; }
+  .col-12               { width: 100%; margin-left: 0; }
+
+  .col-third            { width: 30.6666666667%; }
+  .col-2-thirds         { width: 65.3333333333%; }
+  .col-half             { width: 48%; }
+
+  /* Offsets */
+  .offset-col-1         { margin-left: 8.66666666667%; }
+  .offset-col-2         { margin-left: 17.3333333333%; }
+  .offset-col-3         { margin-left: 26%;            }
+  .offset-col-4         { margin-left: 34.6666666667%; }
+  .offset-col-5         { margin-left: 43.3333333333%; }
+  .offset-col-6         { margin-left: 52%;            }
+  .offset-col-7         { margin-left: 60.6666666667%; }
+  .offset-col-8         { margin-left: 69.3333333333%; }
+  .offset-col-9         { margin-left: 78.0%;          }
+  .offset-col-10        { margin-left: 86.6666666667%; }
+  .offset-col-11        { margin-left: 95.3333333333%; }
+
+  .offset-col-third     { margin-left: 34.6666666667%; }
+  .offset-col-2-thirds  { margin-left: 69.3333333333%; }
+  .offset-col-half      { margin-left: 52%; }
+@media screen and (max-width: 480px) {
+  .col {
+    margin-left: 0; 
+    margin-bottom: 20px; 
+  }  
+}
+
+.f-right {
+  float: right;
+}
+.f-left {
+  float: left;
+}
+.full-width {
+  width: 100%;
+}
+

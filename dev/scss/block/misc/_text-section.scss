@@ -1,0 +1,31 @@
+.text-section {
+	padding: 50px 0;
+	.tile-6 {
+		padding: 30px;
+		@media screen and (max-width: 960px) {
+			padding: 10px;
+		}
+		@media screen and (max-width: 735px) {
+			width: 100%;
+		}
+	}
+	&.with-bg {
+		.tile-6 {
+			@media screen and (max-width: 960px) {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.with-bg {
+	background-color: #e7e7e7;
+}
+
+.club-cards {
+	.col-6 {
+	@media screen and (max-width: 480px) {
+			width: 100%;
+		}	
+	}
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>title</title>
+  
+  <!-- meta -->
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+  
+  <!-- styles -->
+  <link rel='stylesheet' href='css/swiper.css' />
+  <link rel='stylesheet' href='css/main.css' />
+  
+   
+   
+ 
+</head>
+
+<body class="body">
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  
+  <div class="wrap">
+    
+
+    <div id="header">
+         
+    </div>
+
+  <div class="content">
+
+  
+  <div id="footer">
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- callback -->
+  <div id="overlay" style="display: none;"></div>
+      <div id="callback-window" class="modal" style="display: none;"> <a class="modal-close" href="#"></a>
+        <div class="spinner"></div>
+        <div class="modal-content">
+          <h2>Обратный звонок</h2>
+          <div class="">
+          <form action="" method="post" data-file="callback">
+            <input type="text" name="name" placeholder="Ваше имя *">
+            <input type="text" name="phone" placeholder="Номер телефона *">
+            <input type="text" name="time" placeholder="Удобное время для звонка">
+            <textarea name="text" placeholder="Здесь вы можете оставить комментарий"></textarea>
+            <div class="modal-controls">
+              <button type="submit" class="bigbutt btn btn_primary-color">Отправить</button>
+            </div>
+            <div class="modal-errors">
+            </div>
+            <div class="modal-result">
+            </div>
+          </form>
+          </div>
+        </div>
+        <div class="modal-content-copy"></div>
+      </div>
+
+</div>
+
+
+        
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- scripts -->
+<script src='js/swiper.min.js'></script>
+<script src='js/script.js'></script> 
+<script src='js/jquery.form.min.js'></script> 
+
+<!-- инициализируем свайпер -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'fade',
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      },
+    });    
+  </script> 
+
+<!-- мобильное меню -->
+<script>
+  // открытие
+  $("#btnOpenMobileMenu").click(function(){
+    $("#mobile-menu").removeClass("mobile-menu_hidden");
+    $("#mobile-menu-overlay").removeClass("mobile-menu-overlay_hidden");
+  });
+
+  // закрытие
+  $("#btnCloseMobileMenu").click(function(){
+    $("#mobile-menu").addClass("mobile-menu_hidden");
+    $("#mobile-menu-overlay").addClass("mobile-menu-overlay_hidden");
+  });
+
+ $("#mobile-menu-overlay").click(function(){
+    $("#mobile-menu").addClass("mobile-menu_hidden");
+    $("#mobile-menu-overlay").addClass("mobile-menu-overlay_hidden");
+
+ });
+
+
+</script>
+
+</body>
+
+</html>

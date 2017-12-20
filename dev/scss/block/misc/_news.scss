@@ -1,0 +1,52 @@
+.news {
+	.row {
+		padding-bottom: 15px; /*чтобы у важной новости был виден треугольник снизу*/
+	}
+	.news-item {
+		padding: 0; /*убираем двойные паддинги внутри tile-6*/
+	}
+	.news-item:first-of-type {
+		margin-left: 0;
+	}
+
+	.news-item__type {
+		margin: 20px 0 0 0;
+		font-weight: bold;
+	}
+	
+	.news-item_important {
+		position: relative;
+		background-color: #e7e7e7;
+		padding: 20px;
+		margin-top: -20px;
+		&:after {
+			display: table;
+			content: "";
+			position: absolute;
+			width: 	20px;
+			height: 20px;			
+			right: 	20px;
+			bottom: 20px;
+			background-image: url(/img/icons/icon-attention.png);
+			background-repeat: no-repeat;			
+		}
+		&:before {
+			display: table;
+			content: "";
+			position: absolute;
+			width: 	28px;
+			height: 15px;			
+			left: 12%;
+			bottom: -15px;
+			background-image: linear-gradient(338deg, #fff 50%, #e7e7e7 50%);
+			background-repeat: no-repeat;			
+		}
+	}
+	@media screen and (max-width: 1200px) {
+		.news-item.col-6 {
+			width: 100%;
+			margin-bottom: 25px;
+		}	
+	}
+	
+}
