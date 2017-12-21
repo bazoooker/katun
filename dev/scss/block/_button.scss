@@ -1,6 +1,7 @@
 // block
 .btn {
 	padding: 9px 18px;
+	border-radius: 5px;
 }
 
 
@@ -19,7 +20,8 @@
 }
 .btn_transparent {
 	color: #fff;
-	background-color: transparent;		
+	background-color: transparent;
+	border: 1px solid #fff;		
 }
 
 

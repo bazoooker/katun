@@ -25,6 +25,7 @@ body {
 #header {
 	box-sizing:border-box;
 	padding:5px;
+	margin-bottom: 35px;
 }
 #header .logo{
 	float:left;

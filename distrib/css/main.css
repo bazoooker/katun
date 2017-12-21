@@ -174,7 +174,8 @@ p {
   color: #fff; }
 
 .btn {
-  padding: 9px 18px; }
+  padding: 9px 18px;
+  border-radius: 5px; }
 
 .btn_color-main {
   color: #fff;
@@ -194,7 +195,8 @@ p {
 
 .btn_transparent {
   color: #fff;
-  background-color: transparent; }
+  background-color: transparent;
+  border: 1px solid #fff; }
 
 .btn_main-color:hover {
   color: #fff; }
@@ -473,7 +475,7 @@ input[type=submit] {
     font-weight: 300; }
   .treatment-content-text .checklist li {
     position: relative;
-    padding-bottom: 5px; }
+    padding-bottom: 8px; }
   .treatment-content-text .checklist li:before {
     position: absolute;
     top: 3px;
@@ -486,3 +488,35 @@ input[type=submit] {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     content: ""; }
+
+.treatment-course {
+  background-image: url(/img/bg/bg-treatment-branches.jpg);
+  background-repeat: no-repeat;
+  background-position: center 70%;
+  padding: 37px 37px 37px 0; }
+  .treatment-course h2 {
+    margin-bottom: 17px;
+    padding-left: 37px; }
+
+.treatment-course__tab-contents {
+  padding-left: 47px; }
+  .treatment-course__tab-contents .headline {
+    margin-bottom: 28px;
+    font-size: 20px;
+    font-weight: 400; }
+  .treatment-course__tab-contents p {
+    margin-bottom: 18px;
+    line-height: 21px;
+    font-weight: 400; }
+
+.course-tab {
+  padding: 8px 0;
+  padding-left: 37px;
+  list-style: none;
+  background-color: transparent;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400; }
+
+.course-tab_active {
+  background-color: #009e6a; }
