@@ -1,0 +1,38 @@
+.treatment-content-tab {
+	background-color: #e5f5f0;
+	p {
+		position: relative;
+		padding: 20px 37px;
+		color: $color_main;
+		
+		&:before {
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			width: 5px;
+			height: 5px;
+			border-bottom: 2px solid $color_main;
+			border-right: 2px solid $color_main;
+			transform: rotate(-45deg);
+			content: "";
+		}
+	}	
+}
+.treatment-content-tab_active {
+	background-color: $color_main;
+	p {
+		color: #fff;
+
+		&:before {
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			width: 5px;
+			height: 5px;
+			border-bottom: 2px solid #fff;
+			border-right: 2px solid #fff;
+			transform: rotate(-45deg);
+			content: "";
+		}
+	}
+}
