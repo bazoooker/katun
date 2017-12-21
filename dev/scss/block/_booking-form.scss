@@ -1,0 +1,49 @@
+
+
+
+// .legend {
+// 	font-size: 13px;
+//     padding-top: 3px;
+//     color: white;	    
+//     float: left;
+// }
+
+// .legend_big {width: 40%;}
+// .legend_small {width: 28%; text-align: center;}
+
+.with-icon_calendar {background: transparent url(/img/ico-cal.png) 95% 5px no-repeat !important;}
+.with-icon_discount {background: transparent url(/img/ico-cal.png) 95% 5px no-repeat; background-position: left center; background-repeat: no-repeat; padding-left: 30px;}
+.with-icon_caret-to-right {background: transparent url(/img/ico-cal.png) 95% 5px no-repeat; background-position: right center; background-repeat: no-repeat; padding-right: 30px;}
+.input_big {width: 60%;}
+.input_small {width: 16%;}
+
+.input {		
+	float: left;
+}
+
+input[type=text]  {
+	box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px;
+    background: transparent;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+input[type=submit] {
+	border: 0;
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+

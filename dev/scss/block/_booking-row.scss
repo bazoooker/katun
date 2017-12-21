@@ -1,0 +1,39 @@
+// block
+.booking-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;	
+	width: 100%;
+	margin: 5px 0;
+}
+	// elements
+	.booking-row__left {
+		width: 40%;
+		color: #fff;
+		font-size: 13px;
+	}
+	.booking-row__right {
+		width: 60%;
+		color: #fff;
+		font-size: 13px;
+
+		.input_small {
+			width: 30px;
+		}
+
+		.input_left {
+			margin-right: 15px;
+		}
+	}
+	// modificators
+	.booking-row_discount {
+		margin: 10px 0;
+	}
+
+
+// block
+.all-offers {
+	text-decoration: none;
+	border-bottom: 1px dashed #fff;
+	font-size: 12px;
+}

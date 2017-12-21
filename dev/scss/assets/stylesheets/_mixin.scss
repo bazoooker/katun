@@ -1,7 +1,32 @@
-
-@mixin font-700-italic {
-	font-family: 'DIN-Pro-Cond';
-	font-weight: bold;	
-	text-transform: uppercase;
-	font-style: italic;
+// grid
+@mixin block_padding {
+	padding: 37px;
+	@media screen and (max-width: 768px) {
+		& {
+			padding: 15px;
+		}
+	}
 }
+
+@mixin btn_padding {
+	padding: 20px;
+}
+
+@mixin block_border {
+	border: 2px solid $color_main;
+}
+
+
+// colors
+@mixin gradient {
+	background-image: -ms-linear-gradient(left, #007393 0%, #009e6a 100%);
+	background-image: -moz-linear-gradient(left, #007393 0%, #009e6a 100%);
+	background-image: -o-linear-gradient(left, #007393 0%, #009e6a 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #007393), color-stop(100, #009e6a));
+	background-image: -webkit-linear-gradient(left, #007393 0%, #009e6a 100%);
+	background-image: linear-gradient(to right, #007393 0%, #009e6a 100%);
+}
+
+
+// fonts
+

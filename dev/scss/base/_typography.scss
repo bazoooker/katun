@@ -1,0 +1,29 @@
+body {
+	font-family: 'roboto', sans-serif;
+}
+h1 {
+	font-size: 33px;
+	color: #3b3b3b;
+	font-weight: 600;
+}
+h2{
+	font-size: 26px;
+	color: #3b3b3b;
+	font-weight: 600;
+}
+h3{
+	font-size: 22px;
+	color: #3b3b3b;
+	font-weight: 600;}
+h4{}
+h5{}
+h6{}
+p {
+	font-size: 15px;
+	color: #3b3b3b;
+	font-weight: 400;
+}
+
+.color_main {color:$color_main;}
+.color_secondary {color:$color_secondary;}
+.color_white {color: #fff;}

@@ -1,0 +1,36 @@
+// block
+.btn {
+	padding: 9px 18px;
+}
+
+
+// modificators
+.btn_color-main {
+	color: #fff;
+	background-color: $color_main;
+}
+.btn_color-secondary {
+	color: #fff;
+	background-color: $color_secondary;
+}
+.btn_gradient {
+	color: #fff;
+	@include gradient;
+}
+.btn_transparent {
+	color: #fff;
+	background-color: transparent;		
+}
+
+
+// states
+.btn_main-color:hover {
+	color: #fff;		
+}
+.btn_gradient:hover {
+	color: #fff;		
+}
+.btn_transparent:hover {
+	color: #fff;		
+}
+

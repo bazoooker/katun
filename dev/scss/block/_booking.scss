@@ -1,0 +1,17 @@
+// block
+.booking {
+	background-color: $color_main;
+	width: 290px;
+	height: 300px;
+	padding: 37px;
+}
+	// elements
+	.booking__booking-form {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		jusstify-content: space-between;
+		p, h2, input, a {color: #fff}
+	}

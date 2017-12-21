@@ -1,0 +1,21 @@
+// block
+.resort-permit {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: gray;
+	height: 300px;
+	margin-right: 10px;
+	@include block-padding;
+	background-image: url(/img/bg/bg-hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center 70%;
+	p {
+		font-size: 18px;
+		font-weight: 300;
+	}
+}
+// elements
+	.resort-permit__features {
+		overflow: hidden;
+	}

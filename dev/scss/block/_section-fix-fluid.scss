@@ -1,0 +1,17 @@
+// block
+.section-fix-fluid {	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 100%;
+	margin-bottom: 10px;
+
+}
+	// elements
+	.section-fix-fluid__fix{
+		width: 290px;
+		height: 300px;
+	}
+	.section-fix-fluid__fluid{
+		flex-grow: 1;
+	}
