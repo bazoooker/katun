@@ -8,3 +8,9 @@
 .pull-right{float: right;}
 .pull-left{float: left;}
 
+.hidden {
+	display: none;
+	opacity: 0;
+	width: 0;
+	transform: translateX(30px);
+}

@@ -180,17 +180,19 @@
 			  	<!-- ===== из чего состоит лечение ===== -->
 				<div class="section-fix-fluid">					
 					<div class="section-fix-fluid__fix treatment-content-tabs">
-							<div id="treatment-tab-1" class="treatment-content-tab treatment-content-tab_active">
-								<p>Из чего состоит лечение в Санатории Катунь?</p>
-							</div>
-							<div id="treatment-tab-2" class="treatment-content-tab">
-								<p>Из чего состоит лечение в Санатории Катунь?</p>
-							</div>
-							<div id="treatment-tab-3" class="treatment-content-tab">
-								<p>Из чего состоит лечение в Санатории Катунь?</p>
-							</div>
+						<div id="treatment-tab-1" class="treatment-content-tab treatment-content-tab_active"  onclick="openTab(1)">
+							<p>Из чего состоит лечение в Санатории Катунь?</p>
+						</div>
+						<div id="treatment-tab-2" class="treatment-content-tab" onclick="openTab(2)">
+							<p>Из чего состоит лечение в Санатории Катунь?</p>
+						</div>
+						<div id="treatment-tab-3" class="treatment-content-tab" onclick="openTab(3)">
+							<p>Из чего состоит лечение в Санатории Катунь?</p>
+						</div>
 					</div>
+
 					<div class="section-fix-fluid__fluid treatment-content-text">
+
 						<div class="treatment-content-text__tab-contents" id="tab-contents-1">
 							<p class="headline">Вы получите индивидуальный оздоровительный комплекс, состоящий из:</p>
 							<ul class="checklist">
@@ -201,23 +203,23 @@
 							</ul>
 						</div>
 
-						<div style="display: none;" class="treatment-content-text__tab-contents" id="tab-contents-2">
-							<p class="headline">Вы получите индивидуальный оздоровительный комплекс, состоящий из:</p>
+						<div class="treatment-content-text__tab-contents hidden" id="tab-contents-2">
+							<p class="headline">Лечение состоит из 1</p>
 							<ul class="checklist">
-								<li>Консультаций высококвалифицированных врачей</li>
-								<li>От 5 лечебных процедур по основному заболеванию</li>
-								<li>1-2 лечебные процедуры по сопутствующему заболеванию</li>
-								<li>Обследования, результаты которых признаются всеми центрами России</li>
+								<li>1 Консультаций высококвалифицированных врачей</li>
+								<li>1 От 5 лечебных процедур по основному заболеванию</li>
+								<li>1 1-2 лечебные процедуры по сопутствующему заболеванию</li>
+								<li>1 Обследования, результаты которых признаются всеми центрами России</li>
 							</ul>
 						</div>
 
-						<div style="display: none;" class="treatment-content-text__tab-contents" id="tab-contents-3">
-							<p class="headline">Вы получите индивидуальный оздоровительный комплекс, состоящий из:</p>
+						<div class="treatment-content-text__tab-contents hidden" id="tab-contents-3">
+							<p class="headline">Лечение состоит из 2</p>
 							<ul class="checklist">
-								<li>Консультаций высококвалифицированных врачей</li>
-								<li>От 5 лечебных процедур по основному заболеванию</li>
-								<li>1-2 лечебные процедуры по сопутствующему заболеванию</li>
-								<li>Обследования, результаты которых признаются всеми центрами России</li>
+								<li>2 Консультаций высококвалифицированных врачей</li>
+								<li>2 От 5 лечебных процедур по основному заболеванию</li>
+								<li>2 1-2 лечебные процедуры по сопутствующему заболеванию</li>
+								<li>2 Обследования, результаты которых признаются всеми центрами России</li>
 							</ul>
 						</div>
 					</div>
@@ -233,20 +235,32 @@
 					<div class="section-fix-fluid">
 						<div class="section-fix-fluid__fix treatment-course__tabs">
 							<ul>
-								<li class="course-tab course-tab_active">Гастроэнтерология</li>
-								<li class="course-tab">Сердечно-сосудистая система</li>
-								<li class="course-tab">Опорно-двигательный аппарат</li>
-								<li class="course-tab">Гинекология</li>							
-								<li class="course-tab">Нервная система</li>
-								<li class="course-tab">Болезни кожи</li>
-								<li class="course-tab">Психотерапия</li>
-								<li class="course-tab">Лечение детей</li>
+								<li onclick="openTab2(1)" id="course-tab-1" class="course-tab course-tab_active">Гастроэнтерология</li>
+								<li onclick="openTab2(2)" id="course-tab-2" class="course-tab">Сердечно-сосудистая система</li>
+								<li onclick="openTab2(3)" id="course-tab-3" class="course-tab">Опорно-двигательный аппарат</li>
+								<li onclick="openTab2(4)" id="course-tab-4" class="course-tab">Гинекология</li>							
+								<li onclick="openTab2(5)" id="course-tab-5" class="course-tab">Нервная система</li>
+								<li onclick="openTab2(6)" id="course-tab-6" class="course-tab">Болезни кожи</li>
+								<li onclick="openTab2(7)" id="course-tab-7" class="course-tab">Психотерапия</li>
+								<li onclick="openTab2(8)" id="course-tab-8" class="course-tab">Лечение детей</li>
 							</ul>
 						</div>
 
 						<div class="section-fix-fluid__fluid">
-							<div class="treatment-course__tab-contents">
+							<div id="treatment-course__tab-contents-1" class="treatment-course__tab-contents">
 								<p class="headline color_white">Гастроэнтерология</p>
+								<p class="color_white">На базе гастроэнтерологического отделения <br>проводится долечивание больных после <br>операций по поводу язвенной болезни <br>желудка, двенадцатиперстной кишки, удаления желчного пузыря.</p>
+								<button class="btn btn_transparent">Подробнее о лечении</button>
+							</div>
+
+							<div id="treatment-course__tab-contents-2" class="treatment-course__tab-contents hidden">
+								<p class="headline color_white">Сердечно-сосудистая система</p>
+								<p class="color_white">На базе гастроэнтерологического отделения <br>проводится долечивание больных после <br>операций по поводу язвенной болезни <br>желудка, двенадцатиперстной кишки, удаления желчного пузыря.</p>
+								<button class="btn btn_transparent">Подробнее о лечении</button>
+							</div>
+
+							<div id="treatment-course__tab-contents-3" class="treatment-course__tab-contents hidden">
+								<p class="headline color_white">Опорно-двигательный аппарат</p>
 								<p class="color_white">На базе гастроэнтерологического отделения <br>проводится долечивание больных после <br>операций по поводу язвенной болезни <br>желудка, двенадцатиперстной кишки, удаления желчного пузыря.</p>
 								<button class="btn btn_transparent">Подробнее о лечении</button>
 							</div>
@@ -357,31 +371,31 @@
 						    <div class="swiper-wrapper">
 						        <!-- Slides -->
 						        <div class="swiper-slide swiper-slide_infographics">
-						        	<div class="icon-container icon-container_swiper-infographics" style="background-image: url(/img/icons/icon_why-5.png);">
+						        	<div class="icon-container icon-container_swiper-infographics" style="background-image: url(/img/icons/icon_services-1.png );">
 						        		
 						        	</div>
 						        	<p class="color_secondary">Бассейн и сауна</p>
 						        </div>
 						        <div class="swiper-slide swiper-slide_infographics">
-						        	<div class="icon-container icon-container_swiper-infographics" style="background-image: url(/img/icons/icon_why-4.png);">
+						        	<div class="icon-container icon-container_swiper-infographics" style="background-image: url(/img/icons/icon_services-2.png );">
 						        		
 						        	</div>
 						        	<p class="color_secondary">Библиотека</p>
 						        </div>
 						        <div class="swiper-slide swiper-slide_infographics">
-						        	<div class="icon-container icon-container_swiper-infographics" style="background-image: url(/img/icons/icon_why-3.png);">
+						        	<div class="icon-container icon-container_swiper-infographics" style="background-image: url(/img/icons/icon_services-3.png );">
 						        		
 						        	</div>
 						        	<p class="color_secondary">Салон красоты</p>
 						        </div>
 						        <div class="swiper-slide swiper-slide_infographics">
-						        	<div class="icon-container icon-container_swiper-infographics" style="background-image: url(/img/icons/icon_why-2.png);">
+						        	<div class="icon-container icon-container_swiper-infographics" style="background-image: url(/img/icons/icon_services-4.png );">
 						        		
 						        	</div>
 						        	<p class="color_secondary">Пункт проката</p>
 						        </div>
 						        <div class="swiper-slide swiper-slide_infographics">
-						        	<div class="icon-container icon-container_swiper-infographics" style="background-image: url(/img/icons/icon_why-1.png);">
+						        	<div class="icon-container icon-container_swiper-infographics" style="background-image: url(/img/icons/icon_services-5.png );">
 						        		
 						        	</div>
 						        	<p class="color_secondary">Фитобар</p>

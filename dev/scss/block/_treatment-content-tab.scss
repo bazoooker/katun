@@ -1,38 +1,51 @@
 .treatment-content-tab {
+	position: relative;
 	background-color: #e5f5f0;
+	border-left: 3px solid #e5f5f0;
+	cursor: pointer;
 	p {
-		position: relative;
-		padding: 20px 37px;
-		color: $color_main;
 		
-		&:before {
-			position: absolute;
-			top: 50%;
-			right: 20px;
-			width: 5px;
-			height: 5px;
-			border-bottom: 2px solid $color_main;
-			border-right: 2px solid $color_main;
-			transform: rotate(-45deg);
-			content: "";
-		}
+		padding: 20px 37px;
+		color: $color_main;		
+		
+	}
+	&:before {
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		width: 5px;
+		height: 5px;
+		border-bottom: 2px solid $color_main;
+		border-right: 2px solid $color_main;
+		transform: rotate(-45deg);
+		transition: 200ms;
+		content: "";
+	}
+	&:hover:before {
+		right: 17px;
 	}	
 }
+
 .treatment-content-tab_active {
-	background-color: $color_main;
+	cursor: pointer;
+	transition: 200ms;
+	background-color: $color_main;	
 	p {
 		color: #fff;
 
-		&:before {
-			position: absolute;
-			top: 50%;
-			right: 20px;
-			width: 5px;
-			height: 5px;
-			border-bottom: 2px solid #fff;
-			border-right: 2px solid #fff;
-			transform: rotate(-45deg);
-			content: "";
-		}
+		
+	}
+	&:before {
+		position: absolute;
+		top: 50%;
+		right: 17px;
+		width: 5px;
+		height: 5px;
+		border-bottom: 2px solid #fff;
+		border-right: 2px solid #fff;
+		transform: rotate(-45deg);
+		content: "";
 	}
 }
+
+
