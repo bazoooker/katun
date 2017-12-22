@@ -1,0 +1,18 @@
+.checklist {		
+		padding-left: 24px;
+		list-style: none;
+		font-size: 15px;
+		font-weight: 300;
+	}
+	.checklist li {position: relative; padding-bottom: 8px;}
+	.checklist li:before {
+		position: absolute;
+		top: 3px;
+		left: -20px;
+		width: 3px;
+		height: 7px;
+		border-bottom: 2px solid $color_secondary;
+		border-right: 2px solid $color_secondary;
+		transform: rotate(45deg);
+		content: "";
+	}

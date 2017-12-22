@@ -1,0 +1,15 @@
+// block
+.why-katun-features-holder {
+	display: flex;
+	flex-direciton: row;
+	flex-wrap: no-wrap;
+	justify-content: space-between;
+}
+	// elements
+	.why-katun-features-holder__feature {
+		text-align: center;	
+		p {
+			font-size: 14px;
+			font-weight: 600;
+		}
+	}

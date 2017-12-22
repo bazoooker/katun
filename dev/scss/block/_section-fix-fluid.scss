@@ -9,9 +9,17 @@
 }
 	// elements
 	.section-fix-fluid__fix{
-		width: 290px;
-		// height: 300px;
+		width: 290px;		
 	}	
 	.section-fix-fluid__fluid{
 		flex-grow: 1;
+	}
+	
+	// modificators
+	.section-fix-fluid__fluid_left{
+		flex-grow: 1;
+		margin-right: 10px;
+	}
+	.section-fix-fluid__fix_big {
+		width: 390px;
 	}

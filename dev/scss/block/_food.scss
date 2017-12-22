@@ -1,0 +1,24 @@
+// block
+.food {	
+	background-color: #f0f0f0;	
+}
+
+	// elements
+	.food__left {
+		@include block_padding;
+		h2,p {margin-bottom: 26px;}
+	}
+	.food__right {}
+
+	// modificators
+	.food__right_full-photo {
+		
+		margin-right: 10px;
+	}
+	.food__right_tiles {		
+		flex-grow: 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;		
+	}
+	

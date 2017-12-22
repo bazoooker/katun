@@ -1,0 +1,12 @@
+// block
+.services {
+	@include block_padding;
+	background-color: $color_gray;
+	margin-bottom: 10px;
+	h2 {
+		padding-bottom: 26px;
+	}
+	p {
+		margin-bottom: 41px;
+	}
+}

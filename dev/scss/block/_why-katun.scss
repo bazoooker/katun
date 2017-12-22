@@ -1,0 +1,8 @@
+.why-katun {
+	@include block_border;
+	@include block_padding;
+	margin-bottom: 10px;
+	h2 {
+		margin: 0 0 40px 0;
+	}
+}

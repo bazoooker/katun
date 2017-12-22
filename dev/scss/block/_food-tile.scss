@@ -1,0 +1,18 @@
+.food-tile {
+		width: 45%;
+		background-color: green;
+		// margin: 5px;
+		flex-grow: 1;
+	}
+		.food-tile:nth-of-type(1){
+			margin: 0 5px 5px 0;
+		}
+		.food-tile:nth-of-type(2){
+			margin: 0 0 5px 5px;
+		}
+		.food-tile:nth-of-type(3){
+			margin: 5px 5px 0 0;
+		}
+		.food-tile:nth-of-type(4){
+			margin: 5px 0 0 5px;
+		}

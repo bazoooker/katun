@@ -5,19 +5,42 @@
 
 @import "assets/stylesheets/var";
 @import "assets/stylesheets/mixin";
-@import "base/typography";
+
+// cannot go in base section because needs var and mixin
+@import "base/typography"; 
+
 @import "block/button";
+
 @import "block/container";
+
 @import "block/booking";
 @import "block/booking-form";
 @import "block/booking-row";
+
 @import "block/section-fix-fluid";
+
 @import "block/resort-permit";
 @import "block/resort-permit-feature";
+
 @import "block/icon-container";
+
 @import "block/input";
+
 @import "block/treatment-content-tabs";
 @import "block/treatment-content-tab";
 @import "block/treatment-content-text";
 @import "block/treatment-course";
+
 @import "block/course-tab";
+
+@import "block/why-katun";
+@import "block/why-katun-features-holder";
+
+@import "block/food";
+@import "block/food-tile";
+
+@import "block/checklist";
+@import "block/accommodation-and-about";
+@import "block/services";
+@import "block/book-cheaper";
+@import "block/swiper";
