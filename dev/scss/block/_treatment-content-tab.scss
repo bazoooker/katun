@@ -1,8 +1,9 @@
 .treatment-content-tab {
 	position: relative;
 	background-color: #e5f5f0;
-	border-left: 3px solid #e5f5f0;
+	// border-left: 3px solid #e5f5f0;
 	cursor: pointer;
+	list-style: none;
 	p {
 		
 		padding: 20px 37px;
@@ -48,4 +49,14 @@
 	}
 }
 
+
+.swiper-pagination-bullet {
+	width: auto;
+	height: auto;
+	background-color: transparent;
+	opacity: 1;
+	a {
+		color: red;
+	}
+}
 

@@ -30,42 +30,12 @@ function openTab2(tabNumber){
     $(".treatment-course__tab-contents").addClass("hidden");
    
    // если нажат таб-1
-    if (tabNumber == 1) {
         // покажем соответствующий блок контента
-        $("#treatment-course__tab-contents-1").removeClass("hidden");
+        $("#treatment-course__tab-contents-"+tabNumber).removeClass("hidden");
 
         // выделим соответствующий таб
-        $("#course-tab-1").addClass("course-tab_active");
-    }
+        $("#course-tab-"+tabNumber).addClass("course-tab_active");
 
-    else if (tabNumber == 2) { 
-        $("#treatment-course__tab-contents-2").removeClass("hidden");
-        $("#course-tab-2").addClass("course-tab_active");
-    }
-    else if (tabNumber == 3) { 
-        $("#treatment-course__tab-contents-3").removeClass("hidden");
-        $("#course-tab-3").addClass("course-tab_active");
-    }
-    else if (tabNumber == 4) { 
-        $("#treatment-course__tab-contents-4").removeClass("hidden");
-        $("#course-tab-4").addClass("course-tab_active");
-    }
-    else if (tabNumber == 5) { 
-        $("#treatment-course__tab-contents-5").removeClass("hidden");
-        $("#course-tab-5").addClass("course-tab_active");
-    }
-    else if (tabNumber == 6) { 
-        $("#treatment-course__tab-contents-6").removeClass("hidden");
-        $("#course-tab-6").addClass("course-tab_active");
-    }
-    else if (tabNumber == 7) { 
-        $("#treatment-course__tab-contents-7").removeClass("hidden");
-        $("#course-tab-7").addClass("course-tab_active");
-    }
-    else if (tabNumber == 8) { 
-        $("#treatment-course__tab-contents-8").removeClass("hidden");
-        $("#course-tab-8").addClass("course-tab_active");
-    }  
 };
 
 

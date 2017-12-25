@@ -40,11 +40,14 @@
 @import "block/food-tile";
 
 @import "block/checklist";
-@import "block/accommodation-and-about";
+
 @import "block/services";
 @import "block/book-cheaper";
 @import "block/swiper";
 
-.red {
-	background-color: red !important;
-}
+@import "block/accommodation-and-about";
+@import "block/accommodation-swiper";
+@import "block/accommodation-slide";
+@import "block/accommodation-pagination-link";
+
+
