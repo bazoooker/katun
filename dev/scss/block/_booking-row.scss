@@ -5,17 +5,28 @@
 	flex-wrap: nowrap;	
 	width: 100%;
 	margin: 5px 0;
+	// @media screen and (max-width: 1200px) {
+	// 		flex-wrap: wrap;
+	// 	}
 }
 	// elements
 	.booking-row__left {
 		width: 40%;
 		color: #fff;
 		font-size: 13px;
+		// @media screen and (max-width: 1200px) {
+		// 	width: 100%;
+		// 	display: block;
+		// }
 	}
 	.booking-row__right {
 		width: 60%;
 		color: #fff;
 		font-size: 13px;
+		// @media screen and (max-width: 1200px) {
+		// 	width: 100%;
+		// 	display: block;
+		// }
 
 		.input_small {
 			width: 30px;

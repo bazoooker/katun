@@ -2,14 +2,34 @@
 .why-katun-features-holder {
 	display: flex;
 	flex-direciton: row;
-	flex-wrap: no-wrap;
+	flex-wrap: nowrap;
 	justify-content: space-between;
+
+		@media screen and (max-width: 986px) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 }
 	// elements
 	.why-katun-features-holder__feature {
-		text-align: center;	
+		text-align: center;
+		padding: 5px;	
+
+			@media screen and (max-width: 986px) {
+				width: 33.3%;
+				margin-bottom: 20px;
+			}
+			@media screen and (max-width: 430px) {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+
 		p {
 			font-size: 14px;
 			font-weight: 600;
+				@media screen and (max-width: 430px) {
+					font-size: 16px;
+				}
 		}
+
 	}

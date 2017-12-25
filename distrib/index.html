@@ -80,7 +80,7 @@
 				<!-- ====== санаторно-курортная путевка ====== -->
 			  	<div class="section">
 
-			  		<div class="section__part-big">
+			  		<div class="section__part-big section_left">
 						<div class="resort-permit">
 							<h2 class="color_white">Санаторно-курортная путевка</h2>
 							<p class="color_white">Полноценный индивидуальный оздоровительный 
@@ -179,7 +179,7 @@
 
 			  	<!-- ===== из чего состоит лечение ===== -->
 				<div class="section">					
-					<div class="section__part-small treatment-content-tabs">
+					<div class="section__part-small treatment-content-tabs section_left">
 
 						<ul>
 							<li id="treatment-tab-1" class="treatment-content-tab treatment-content-tab_active"  onclick="openTab(1)">
@@ -635,6 +635,27 @@
 		nextEl: '.swiper-button-next_caret',
 		prevEl: '.swiper-button-prev_caret',
 		},
+		
+		breakpoints: {
+		    320: {
+		      slidesPerView: 1,
+		      spaceBetween: 10
+		    },
+
+		    480: {
+		      slidesPerView: 2,
+		      spaceBetween: 20
+		    },
+
+		    640: {
+		      slidesPerView: 3,
+		      spaceBetween: 30
+		    },
+		    986: {
+		      slidesPerView: 4,
+		      spaceBetween: 30
+		    }
+		  }
 	 });    
   </script>
 
