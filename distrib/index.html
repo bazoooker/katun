@@ -78,9 +78,9 @@
 		  	<div class="container">
 				
 				<!-- ====== санаторно-курортная путевка ====== -->
-			  	<div class="section-fix-fluid">
+			  	<div class="section">
 
-			  		<div class="section-fix-fluid__fluid">
+			  		<div class="section__part-big">
 						<div class="resort-permit">
 							<h2 class="color_white">Санаторно-курортная путевка</h2>
 							<p class="color_white">Полноценный индивидуальный оздоровительный 
@@ -111,11 +111,11 @@
 							
 							
 						</div>
-					</div><!--section-fix-fluid__fluid end-->
+					</div><!--section__part-big end-->
 
 
 			  		<!-- ===== бронирование ===== -->
-					<div class="section-fix-fluid__fix">
+					<div class="section__part-small">
 						<div class="booking">
 						  	<h2 class="color_white">Бронирование</h2>
 
@@ -178,8 +178,8 @@
 
 
 			  	<!-- ===== из чего состоит лечение ===== -->
-				<div class="section-fix-fluid">					
-					<div class="section-fix-fluid__fix treatment-content-tabs">
+				<div class="section">					
+					<div class="section__part-small treatment-content-tabs">
 
 						<ul>
 							<li id="treatment-tab-1" class="treatment-content-tab treatment-content-tab_active"  onclick="openTab(1)">
@@ -207,7 +207,7 @@
 						</div> -->
 					</div>
 
-					<div class="section-fix-fluid__fluid treatment-content-text">
+					<div class="section__part-big treatment-content-text">
 
 						<div class="treatment-content-text__tab-contents" id="tab-contents-1">
 							<p class="headline">Вы получите индивидуальный оздоровительный комплекс, состоящий из:</p>
@@ -248,8 +248,8 @@
 				<div class="treatment-course">	
 					<h2 class="color_white">Лечение по направлениям</h2>
 
-					<div class="section-fix-fluid">
-						<div class="section-fix-fluid__fix treatment-course__tabs">
+					<div class="section">
+						<div class="section__part-small treatment-course__tabs">
 							<ul>
 								<li onclick="openTab2(1)" id="course-tab-1" class="course-tab course-tab_active">Гастроэнтерология</li>
 								<li onclick="openTab2(2)" id="course-tab-2" class="course-tab">Сердечно-сосудистая система</li>
@@ -262,7 +262,7 @@
 							</ul>
 						</div>
 
-						<div class="section-fix-fluid__fluid">
+						<div class="section__part-big">
 							<div id="treatment-course__tab-contents-1" class="treatment-course__tab-contents">
 								<p class="headline color_white">Гастроэнтерология</p>
 								<p class="color_white">На базе гастроэнтерологического отделения <br>проводится долечивание больных после <br>операций по поводу язвенной болезни <br>желудка, двенадцатиперстной кишки, удаления желчного пузыря.</p>
@@ -321,10 +321,11 @@
 
 
 
-				<!-- ===== питание ===== -->	
-				<div class="food">
-					<div class="section-fix-fluid">
-						<div class="section-fix-fluid__fix food__left">
+				<!-- ===== питание ===== -->
+
+				<!-- <div class="food">
+					<div class="section">
+						<div class="section__part-small food__left">
 						<h2 class="color_main">Питание</h2>
 						<p><strong>Ресторан санатория "Катунь" приятно удивит вас уютной атмосферой, а также высоким качеством обслуживания!</strong></p>
 
@@ -338,10 +339,51 @@
 						</ul>
 							
 						</div>
-						<div class="section-fix-fluid__fluid food__right food__right_full-photo" style="background-image: url(/img/food_big.jpg); background-size: cover;">
+						<div class="section__part-big food__right food__right_full-photo" style="background-image: url(/img/food_big.jpg); background-size: cover;">
 							
 						</div>
-						<div class="section-fix-fluid__fix_big food__right_tiles">
+						<div class="section__part-small_bigger food__right_tiles">
+							<div class="food-tile" style="background-image: url(/img/food_small-1.jpg); background-size: cover;"></div>
+							<div class="food-tile" style="background-image: url(/img/food_small-2.jpg); background-size: cover;"></div>
+							<div class="food-tile" style="background-image: url(/img/food_small-3.jpg); background-size: cover;"></div>
+							<div class="food-tile" style="background-image: url(/img/food_small-4.jpg); background-size: cover;"></div>
+							
+						</div>
+					</div>
+				</div> -->
+
+				<div class="food">
+					<div class="section">
+						
+						<div class="section section__part-big_smaller section_left">
+							<div class="section__part-small section_left">
+
+								<div class="food__description">
+									<h2 class="color_main">Питание</h2>
+									<p><strong>Ресторан санатория "Катунь" приятно удивит вас уютной атмосферой, а также высоким качеством обслуживания!</strong></p>
+
+									<p>Питание в санатории организовано по четырем категориям:</p>
+
+									<ul class="checklist">
+										<li>Шведский стол</li>
+										<li>Шведский стол ЛЮКС</li>
+										<li>Диетическое питание</li>
+										<li>A-la carte</li>
+									</ul>
+								</div>					
+							
+							</div>
+
+
+							<div class="food__full-photo" style="background-image: url(/img/food_big.jpg); background-size: cover;">						
+								
+							</div>
+						</div>
+
+						
+
+
+						<div class="section__part-small_bigger food__tiles">
 							<div class="food-tile" style="background-image: url(/img/food_small-1.jpg); background-size: cover;"></div>
 							<div class="food-tile" style="background-image: url(/img/food_small-2.jpg); background-size: cover;"></div>
 							<div class="food-tile" style="background-image: url(/img/food_small-3.jpg); background-size: cover;"></div>
@@ -350,61 +392,70 @@
 						</div>
 					</div>
 				</div>
+
+
+
+
+
 				<!-- ===== питание конец ===== -->	
 
 
 
 				<!-- ===== проживание и о санатории ===== -->		  	
 				<div class="accommodation-and-about">
-					<div class="section-fix-fluid">
-						<div class="section-fix-fluid__fluid_left accommodation-and-about__accommodation">
+					<div class="section">
 
-							<div class="accommodation-swiper">							
-							    <div class="swiper-wrapper">							        
-							        <div class="swiper-slide accommodation-slide" style="background-image: url(/img/bg/bg-slider-living.jpg); ">
-							        	<h2 class="color_white">Проживание</h2>
-										<p class="color_white">Разнообразие категорий позволяет выбрать вариант проживания по вкусу.<br> Номера имеют вид на лесной массив и горы.</p>
-										<p class="price color_white">от 40 000 руб.</p>
-							        </div>
-							        <div class="swiper-slide accommodation-slide" style="background-image: url(/img/bg/bg-slider-living.jpg); ">
-							        	<h2 class="color_white">Проживание</h2>
-										<p class="color_white">Разнообразие категорий позволяет выбрать вариант проживания по вкусу.<br> Номера имеют вид на лесной массив и горы.</p>
-										<p class="price color_white">от 40 000 руб.</p>
-							        </div>
-							        <div class="swiper-slide accommodation-slide" style="background-image: url(/img/bg/bg-slider-living.jpg); ">
-							        	<h2 class="color_white">Проживание</h2>
-										<p class="color_white">Разнообразие категорий позволяет выбрать вариант проживания по вкусу.<br> Номера имеют вид на лесной массив и горы.</p>
-										<p class="price color_white">от 40 000 руб.</p>
-							        </div>		        
-							    </div>
+						<div class="section__part-big_smaller section_left">
 
-							    <ul class="accommodation-swiper__pagination">
-							    	
-							    </ul>						    
+							<div class="accommodation-and-about__accommodation">
+								<div class="accommodation-swiper">							
+								    <div class="swiper-wrapper">							        
+								        <div class="swiper-slide accommodation-slide" style="background-image: url(/img/bg/bg-slider-living.jpg); ">
+								        	<h2 class="color_white">Проживание "Стандарт"</h2>
+											<p class="color_white">Разнообразие категорий позволяет выбрать вариант проживания по вкусу.<br> Номера имеют вид на лесной массив и горы.</p>
+											<p class="price color_white">от 40 000 руб.</p>
+								        </div>
+								        <div class="swiper-slide accommodation-slide" style="background-image: url(/img/bg/bg-slider-living.jpg); ">
+								        	<h2 class="color_white">Проживание "Комфорт"</h2>
+											<p class="color_white">Разнообразие категорий позволяет выбрать вариант проживания по вкусу.<br> Номера имеют вид на лесной массив и горы.</p>
+											<p class="price color_white">от 40 000 руб.</p>
+								        </div>
+								        <div class="swiper-slide accommodation-slide" style="background-image: url(/img/bg/bg-slider-living.jpg); ">
+								        	<h2 class="color_white">Проживание "Престиж"</h2>
+											<p class="color_white">Разнообразие категорий позволяет выбрать вариант проживания по вкусу.<br> Номера имеют вид на лесной массив и горы.</p>
+											<p class="price color_white">от 40 000 руб.</p>
+								        </div>
+								        <div class="swiper-slide accommodation-slide" style="background-image: url(/img/bg/bg-slider-living.jpg); ">
+								        	<h2 class="color_white">Проживание "Семейный"</h2>
+											<p class="color_white">Разнообразие категорий позволяет выбрать вариант проживания по вкусу.<br> Номера имеют вид на лесной массив и горы.</p>
+											<p class="price color_white">от 40 000 руб.</p>
+								        </div>
+								        <div class="swiper-slide accommodation-slide" style="background-image: url(/img/bg/bg-slider-living.jpg); ">
+								        	<h2 class="color_white">Проживание "Студия"</h2>
+											<p class="color_white">Разнообразие категорий позволяет выбрать вариант проживания по вкусу.<br> Номера имеют вид на лесной массив и горы.</p>
+											<p class="price color_white">от 40 000 руб.</p>
+								        </div>
+								        <div class="swiper-slide accommodation-slide" style="background-image: url(/img/bg/bg-slider-living.jpg); ">
+								        	<h2 class="color_white">Проживание "Джуниор Сюит"</h2>
+											<p class="color_white">Разнообразие категорий позволяет выбрать вариант проживания по вкусу.<br> Номера имеют вид на лесной массив и горы.</p>
+											<p class="price color_white">от 40 000 руб.</p>
+								        </div>
+								        <div class="swiper-slide accommodation-slide" style="background-image: url(/img/bg/bg-slider-living.jpg); ">
+								        	<h2 class="color_white">Проживание "Апартаменты"</h2>
+											<p class="color_white">Разнообразие категорий позволяет выбрать вариант проживания по вкусу.<br> Номера имеют вид на лесной массив и горы.</p>
+											<p class="price color_white">от 40 000 руб.</p>
+								        </div>		        
+								    </div>
 
-							</div>
+								    <ul class="accommodation-swiper__pagination"></ul>
+								</div>
+							</div>						
+
+						</div>
 						
 
-							<!-- <div class="accommodation-and-about__accommodation" style="background-image: url(/img/bg/bg-slider-living.jpg); ">
+						<div class="section__part-small_bigger">
 
-							<h2 class="color_white">Проживание</h2>
-							<p class="color_white">Разнообразие категорий позволяет выбрать вариант проживания по вкусу.<br> Номера имеют вид на лесной массив и горы.</p>
-							<p class="price color_white">от 40 000 руб.</p>
-								
-							</div> -->
-						</div>
-
-						<!-- <div class="section-fix-fluid__fluid_left">
-							<div class="accommodation-and-about__accommodation" style="background-image: url(/img/bg/bg-slider-living.jpg); ">
-
-							<h2 class="color_white">Проживание</h2>
-							<p class="color_white">Разнообразие категорий позволяет выбрать вариант проживания по вкусу.<br> Номера имеют вид на лесной массив и горы.</p>
-							<p class="price color_white">от 40 000 руб.</p>
-								
-							</div>
-						</div> -->
-
-						<div class="section-fix-fluid__fix_big">
 							<div class="accommodation-and-about__about">
 								<h2 class="color_secondary">О санатории</h2>
 								<p><strong>В настоящее время «Катунь» – это здравница на 315 мест с развитой лечебной и материально-технической базой. Гостям предоставляется возможность выбора размещения от номеров категории «Стандарт» до категории «Апартаменты». </strong> </p>
@@ -587,63 +638,25 @@
 	 });    
   </script>
 
-  <!-- инициализируем свайпер -->
-  <!-- <script>
-	 var swiper = new Swiper('.accommodation-swiper', {
-		
-		slidesPerView: 1,			
-	 });    
-  </script> -->
-
   <script>
-		// var names=['раз','длва','три','четрые','пять','шесть','семь'];
-		//
-		// var swiper = new Swiper('.accommodation-swiper', {
-		// 	slidesPerView: 1,
-		// 	spaceBetween: 0,
-		// 	 pagination: '.accommodation-swiper__pagination',
-		//         paginationClickable: true,
-		//         renderBullet: function (index, className) {
-		//           return '<span class="' + className + '">' + (index + 1) + '</span>';
-		//         },
 
-		// });
 
 		var names=['Стандарт','Комфорт','Престиж','Семейный','Студия','Джуниор сюит','Апартаменты'];
 
 		var swiper = new Swiper('.accommodation-swiper', {
-	      pagination: {
-	        el: '.accommodation-swiper__pagination',
-	        clickable: true,
-	        renderBullet: function (index, className) {
-	          // return '<li class="' + className + '">' + (index + 1) + '</span>';
-	          return ' <li class="accommodation-pagination-link ' + className + ' "> ' + (names[index]) + '</li>';
-	        },
-	      },
+			slidesPerView: 1,
+			speed: 400,
+			spaceBetween: 0,
+	      	pagination: {
+		        el: '.accommodation-swiper__pagination',
+		        clickable: true,
+		        renderBullet: function (index, className) {
+		          return ' <li class="accommodation-pagination-link ' + className + ' "> ' + (names[index]) + '</li>';
+		        },
+		      },
 	    });
 	</script>
 
-<!-- <li class="accommodation-pagination-link swiper-pagination-bullet">
-							    		<a href="#">Стандарт</a>
-							    	</li>
-							    	<li class="accommodation-pagination-link swiper-pagination-bullet">
-							    		<a href="#">Комфорт</a>
-							    	</li>
-							    	<li class="accommodation-pagination-link swiper-pagination-bullet">
-							    		<a href="#">Престиж</a>
-							    	</li>
-							    	<li class="accommodation-pagination-link swiper-pagination-bullet">
-							    		<a href="#">Семейный</a>
-							    	</li>
-							    	<li class="accommodation-pagination-link swiper-pagination-bullet">
-							    		<a href="#">Студия</a>
-							    	</li>
-							    	<li class="accommodation-pagination-link swiper-pagination-bullet">
-							    		<a href="#">Джуниор сюит</a>
-							    	</li>
-							    	<li class="accommodation-pagination-link swiper-pagination-bullet swiper-pagination-bullet-active">
-							    		<a href="#">Апартаменты</a>
-							    	</li> -->
 <!-- мобильное меню -->
 <script>
   // открытие
