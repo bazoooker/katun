@@ -24,6 +24,10 @@
 .accommodation-and-about__about {
 	@include block_padding;
 	@include block_border;
+	
+		@media screen and (max-width: 768px) {
+			margin-top: 10px;
+		}
 	h2,p {
 		margin-bottom: 26px;
 	}

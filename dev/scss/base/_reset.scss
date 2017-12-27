@@ -104,3 +104,9 @@ hr {
 input, select {
     vertical-align:middle;
 }
+
+// все фоновые изображения - под кнопками
+*:after,
+*:before {
+    z-index: 0;
+}

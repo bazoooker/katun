@@ -1,3 +1,9 @@
 .treatment-content-tabs {
-	// margin-right: 10px;
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+	}
 }

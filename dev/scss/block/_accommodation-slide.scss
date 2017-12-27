@@ -4,4 +4,15 @@
 	background-repeat: no-repeat;
 	background-size: cover;	
 	@include block-padding;
+
+		@media screen and (max-width: 1199px) {		
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		 	padding-left: 160px;
+		}
+
+		@media screen and (max-width: 413px) {		
+			padding-left: 20px;
+		}
 }

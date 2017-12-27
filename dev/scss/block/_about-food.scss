@@ -1,0 +1,21 @@
+.about-food {
+	@include block_padding;
+	@include block_border;
+	margin-bottom: 10px;
+
+	h2,p {
+		padding-bottom: 26px;
+	}
+
+}
+
+.about-food {}
+.about-food__tabs {
+	padding-right: 25px;
+}
+.about-food__text {
+	// padding: 0 37px;
+}
+.about-food__photos {
+	padding-left: 25px;
+}

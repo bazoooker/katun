@@ -1,14 +1,52 @@
 // block
 .resort-permit-feature {
-		float: left;
-		min-width: 165px;
+	position: relative;
+	float: left;
+	min-width: 165px;
+	transition: 300ms;
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: -10px;
+		left: 0%;
+		// transform: translateX(-50%);
+		width: 0;
+		height: 1px;
+		background-color: #fff;
+		z-index: 222;
 		transition: 300ms;
-		// cursor: pointer;		
-		p {
-			font-size: 20px;
-			font-weight: bold;
-		}
+
+			@media screen and (max-width: 768px) {		
+			    bottom: 10px;
+			    left: 50%;
+			    transform: translateX(-50%);	    
+			}
 	}
+
+	&:hover .icon-container_hero {
+		transform: translateY(-5px);
+	}
+
+	&:hover:after {
+		width: 70%;
+	}
+
+		@media screen and (max-width: 980px) {		
+		    width: 100%;
+		    text-align: center;	
+		    min-width: 1px;
+		    width: 33.3%;	    
+		}
+		
+	p {
+		font-size: 20px;
+		font-weight: bold;
+			@media screen and (max-width: 980px) {		
+			    font-size: 14px;	    
+			}
+	}
+}
 	// states
 	// .resort-permit-feature:hover {
 	// 	transform: translateY(-3px);

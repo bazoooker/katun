@@ -1,0 +1,19 @@
+.sertification {
+	@include block_padding;
+	background: #027594 url(/img/bg/bg_line-diagonal.png);
+	background-size: 350px;
+	margin-bottom: 10px;
+
+	p {
+		// font-size: 14px;
+		padding-bottom: 25px;
+	}
+
+}
+
+.sertification__hassp-logo {
+	background-image: url(/img/icons/hassp.png );
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}

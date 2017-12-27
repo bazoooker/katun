@@ -1,0 +1,52 @@
+.feedback {
+	margin-bottom: 37px;
+	
+	h2 {
+		padding: 30px 0 30px 37px;
+	}
+}
+
+.feedback__item {
+	position: relative;
+	padding: 53px 37px 37px 37px;
+	border: 2px solid #dadada;
+	margin-bottom: 60px;
+	margin-left: 5px;
+	&:before {
+		position: absolute;
+		width: 17px;
+		height: 13px;
+		content: "";
+		top: 20px;
+		left: 37px;
+		background-image: url(/img/icons/icon_quote.png);
+		background-repeat: no-repeat;		
+		background-size: contain;
+	}
+	&:after {
+		position: absolute;
+		width: 63px;
+		height:43px;
+		content: "";
+		bottom: -43px;
+		left: 10%;
+		background-image: url(/img/icons/feedback-speech-triangle.png);
+		background-repeat: no-repeat;		
+		background-size: contain;
+	}
+	
+
+
+	.feedback-info {		
+		margin-top: 20px;
+
+		.name {
+			font-weight: 600;
+			font-size: 14px;
+		}
+		.date {
+			font-size: 10px;
+			color: #a3a3a3;
+		}
+	}
+}

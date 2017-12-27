@@ -1,6 +1,17 @@
 .accommodation-swiper {
 	height: 100%;
 	position: relative;
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		display: none;
+		background-color: transparent;
+				
+			@media screen and (max-width: 413px) {		
+			 	display: block;
+			}
+	}
+
 }
 
 .accommodation-swiper__pagination {
@@ -12,4 +23,18 @@
 	display: flex;
 	justify-content: space-around;
 	z-index: 10;
+
+		@media screen and (max-width: 1199px) {		
+		 	width: 145px !important;
+		 	flex-direction: column;
+		 	height: 100%;
+		 	left: 0;
+		 	top: 0;
+		 	padding: 15px 10px;
+		 	background-color: rgba(0,0,0,.3); 		 	
+		}
+
+		@media screen and (max-width: 413px) {		
+		 	display: none
+		}
 }

@@ -2,14 +2,25 @@
 .resort-permit {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	
-	height: 300px;
-	// margin-right: 10px;
-	@include block-padding;
+	justify-content: space-between;	
+	min-height: 300px;
+	height: 100%;
+	@include block_padding;
 	background-image: url(/img/bg/bg-hero.jpg);
 	background-repeat: no-repeat;
 	background-position: center 70%;
+	background-size: cover;
+
+		@media screen and (max-width: 768px) {		
+		    height: auto;
+		    // @include block_padding;
+		    // padding: 20px !important;
+
+		    h2, p {
+		    	margin-bottom: 20px;
+		    }
+		}
+
 	p {
 		font-size: 18px;
 		font-weight: 300;
@@ -17,5 +28,5 @@
 }
 // elements
 	.resort-permit__features {
-		overflow: hidden;
+		// overflow: hidden;
 	}

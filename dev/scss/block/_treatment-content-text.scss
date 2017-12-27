@@ -1,5 +1,6 @@
 .treatment-content-text {
-	padding: 20px 37px;
+	// padding: 20px 37px;
+	@include block_padding;
 	@include block_border;
 	.headline {
 		font-size: 18px;

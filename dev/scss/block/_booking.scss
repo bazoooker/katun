@@ -2,8 +2,11 @@
 .booking {
 	background-color: $color_main;
 	// width: 290px;
-	height: 300px;
-	padding: 37px;
+	min-height: 300px;
+	@include block_padding;
+	@media screen and (max-width: 768px) {
+		margin-top: 10px;
+	}
 }
 	// elements
 	.booking__booking-form {
@@ -12,6 +15,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		jusstify-content: space-between;
+		justify-content: space-between;
+		max-width: 300px;
+		margin: 0 auto;
 		p, h2, input, a {color: #fff}
 	}

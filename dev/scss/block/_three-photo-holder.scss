@@ -1,0 +1,33 @@
+// block
+.three-photo-holder {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+	// elements
+	.three-photo-holder__photo-big {
+		width: 100%;
+		min-height: 290px;
+		margin-bottom: 10px;
+		flex-grow: 1;
+		background-size: cover;
+	}
+
+	.three-photo-holder__photo-small {
+		width: 47%;
+		min-height: 140px;
+		flex-grow: 1;
+		background-size: cover;
+		// margin-right: 10px;
+	}
+
+	// modificators
+	.three-photo-holder__photo-small_left {
+		margin-right: 10px;
+	}

@@ -4,12 +4,14 @@
 	// border-left: 3px solid #e5f5f0;
 	cursor: pointer;
 	list-style: none;
-	p {
-		
-		padding: 20px 37px;
-		color: $color_main;		
-		
-	}
+	color: $color_main;
+	flex-grow: 1;
+
+	display: flex;
+	flex-direcrion: row;
+	align-items: center;
+	padding: 20px 37px;
+
 	&:before {
 		position: absolute;
 		top: 50%;
@@ -30,12 +32,9 @@
 .treatment-content-tab_active {
 	cursor: pointer;
 	transition: 200ms;
-	background-color: $color_main;	
-	p {
-		color: #fff;
-
-		
-	}
+	background-color: $color_main;
+	color: #fff;	
+	
 	&:before {
 		position: absolute;
 		top: 50%;

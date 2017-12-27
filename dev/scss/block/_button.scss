@@ -8,6 +8,10 @@
 	display: inline-block;
 	transition: 500ms;
 	overflow: hidden;
+
+	// делаем кнопки поверх всех :after и :before
+	z-index: 1; 
+
 	&:after {
 		position: absolute;
 		top: -357%;

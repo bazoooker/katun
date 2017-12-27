@@ -24,7 +24,7 @@ function openTab(tabNumber){
 function openTab2(tabNumber){
 
     // уберем у всех табов класс "активная" 
-    $(".course-tab").removeClass("course-tab_active");
+    $(".tab").removeClass("tab_active");
 
     // скроем все блоки содежримого табов
     $(".treatment-course__tab-contents").addClass("hidden");
@@ -34,7 +34,7 @@ function openTab2(tabNumber){
         $("#treatment-course__tab-contents-"+tabNumber).removeClass("hidden");
 
         // выделим соответствующий таб
-        $("#course-tab-"+tabNumber).addClass("course-tab_active");
+        $("#course-tab-"+tabNumber).addClass("tab_active");
 
 };
 

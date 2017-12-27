@@ -6,6 +6,10 @@
 	overflow: hidden;
 	margin-bottom: 10px;
 
+	@media screen and (max-width: 768px){		
+		    padding: 45px 25px 45px 25px;
+		}
+
 	h2,p {
 		padding-bottom: 26px;
 	}
@@ -18,11 +22,12 @@
 		top: 0;
 		bottom: 0;
 		right: 20%;
-		width: 320px;
-		height: 220px;
+		width: 387px;
+		// height: 220px;
 		background-image: url(/img/bg/bg_persent.png);
 		background-size: contain;
 		content: "";
+		background-repeat: no-repeat;
 
 	}
 }

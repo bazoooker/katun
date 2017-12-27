@@ -1,0 +1,24 @@
+.about-sanatorium {
+
+	@include block_padding;
+	@include block_border;
+	
+	h2,p {
+		margin-bottom: 26px;
+	}	
+}
+
+// elements
+
+.about-sanatorium__text {
+	// margin-right: 10px;
+}
+
+.about-sanatorium__photos {	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 100%;
+	// margin-left: 10px;
+
+}

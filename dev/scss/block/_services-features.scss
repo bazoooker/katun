@@ -1,0 +1,21 @@
+.services-features {
+	@include block_padding;
+
+	h2 {
+		margin-bottom: 26px;
+	}
+}
+
+.services-features__features-holder {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+
+	p {
+		margin-top: 16px;
+		color: $color_secondary;
+		font-weight: 600;
+	}
+
+}

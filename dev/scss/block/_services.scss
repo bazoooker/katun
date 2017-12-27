@@ -1,7 +1,6 @@
 // block
 .services {
-	@include block_padding;
-	background-color: $color_gray;
+	@include block_padding;	
 	margin-bottom: 10px;
 	h2 {
 		padding-bottom: 26px;
@@ -9,4 +8,10 @@
 	p {
 		margin-bottom: 41px;
 	}
+}
+
+// modificators
+
+.services_bg-gray {
+	background-color: $color_gray;
 }
