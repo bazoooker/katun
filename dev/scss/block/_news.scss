@@ -1,0 +1,13 @@
+// block
+.news {
+	margin-bottom: 10px;
+
+	h2 {
+		@include block-padding;
+	}
+}
+
+// elements
+.news__button-holder {
+	margin: 35px 0;
+}

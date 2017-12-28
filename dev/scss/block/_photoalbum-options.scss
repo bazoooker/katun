@@ -1,0 +1,56 @@
+.photoalbum-options {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	justify-content: space-between;
+
+		@media screen and (max-width: 400px) {
+			flex-direction: column;							
+		}
+}
+.photoalbum-options__item {
+	position: relative;
+	width: 33.3%;
+	margin-top: 23px;
+	text-align: center;
+	text-decoration: none;		
+
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: -10px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 0;
+		height: 1px;
+		background-color: #fff;
+		z-index: 222;
+		transition: 300ms;
+
+			@media screen and (max-width: 768px) {		
+			    bottom: 10px;;	    
+			}
+			
+	}
+
+	&:hover .icon-container_photoalbum-option {
+		transform: translateY(-5px);
+	}
+
+	&:hover:after {
+		width: 70%;
+	}
+
+		@media screen and (max-width: 980px) {		
+		    width: 100%;
+		    text-align: center;	
+		    min-width: 1px;
+		    width: 33.3%;	    
+		}
+
+		@media screen and (max-width: 400px) {
+			width: 100%;									
+		}
+}

@@ -2,13 +2,14 @@
 		background-size: contain;		
 		background-repeat: no-repeat;
 		background-position: center center;
+		transition: 300ms;
 	}
 
 		.icon-container_hero {
 			width: 52px;
 			height: 52px;
 			margin-bottom: 18px;
-			transition: 300ms;
+			
 				@media screen and (max-width: 980px) {		
 				    margin: 0 auto;		    
 				    margin-bottom: 18px;
@@ -38,4 +39,10 @@
 			height: 54px;
 			margin-bottom: 16px;
 			margin: 0 auto;						
+		}
+		.icon-container_photoalbum-option {
+			width: 39px;
+			height: 32px;
+			margin: 0 auto;
+			margin-bottom: 16px;									
 		}

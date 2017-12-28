@@ -4,9 +4,16 @@
 	background-size: 350px;
 	margin-bottom: 10px;
 
+		@media screen and (max-width: 768px) {
+		    background-size: 600px;
+		}
+
 	p {
 		// font-size: 14px;
 		padding-bottom: 25px;
+			@media screen and (max-width: 768px) {
+			    padding-bottom: 0;
+			}
 	}
 
 }
@@ -16,4 +23,10 @@
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
+	width: 25%;
+
+		@media screen and (max-width: 768px) {
+		    min-height: 100px;
+			margin-bottom: 20px;
+		}
 }

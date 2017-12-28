@@ -2,7 +2,8 @@
 .food {	
 	background-color: #f0f0f0;
 	@include block_padding;
-	@include block_border;	
+	@include block_border;
+	margin-bottom: 10px;	
 }
 
 	// elements
