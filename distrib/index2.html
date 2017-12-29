@@ -251,8 +251,8 @@
 					<p>Питание осуществляется ресторане, сертифицированном на первую категорию. Ресторан соединен теплым переходом со спальным корпусом и располагается на 2-м этаже санатория. Отдыхающим предлагаются следующие виды питания: «шведский стол», «диетическое», «люкс». Питание трехразовое, для отдельных категорий гостей (диабетики, дети) - 5-ти разовое. </p>
 					<p>В приготовлении блюд используются экологически чистые продукты алтайских производителей. Ресторан регулярно проводит выставки кулинарного мастерства, где отдыхающие могут попробовать большой ассортимент фирменных блюд, лучшие из которых затем подаются на стол в течение года.</p>
 
-					<div class="section">
-						<div class="section__part-small about-food__tabs">
+					<div class="section-tabs">
+						<div class="section-tabs__tabs">
 							<ul>
 								<li onclick="openTab2(1)" id="course-tab-1" class="tab tab_about-food tab_active">Шведский стол</li>
 								<li onclick="openTab2(2)" id="course-tab-2" class="tab tab_about-food">Шведский стол ЛЮКС</li>
@@ -265,10 +265,10 @@
 
 						<!-- TODO если фото справа не будут меняться, поместить контейнер для слайда внутри первого section__half. Если же будут, то нужно менять весь section - нужна обертка для него -->
 
-						<div class="section__part-big">
-							<div class="section">
+						<div class="section-tabs__content">
+							<div class="tab-slide">
 							
-								<div class="section__half about-food__text">
+								<div class="tab-slide__text">
 									<p>Меню сбалансировано по белковым, углеводным и жировым составляющим, разработано с учетом физиологических норм и потребностей организма и пищевой ценности каждого блюда.  </p>
 
 									<p>В рацион включены различные овощные, крупяные, молочные, мясные и рыбные закуски  различных способов приготовления (тушение, варка, жарка, запекание). Меню чередуется по дням недели. </p>
@@ -284,7 +284,7 @@
 									<p>Для всех посетителей ресторана ежедневно - вечерний кефир.</p>
 								</div>
 
-								<div class="section__half about-food__photos">
+								<div class="tab-slide__photo">
 									<div class="three-photo-holder">
 										<div class="three-photo-holder__photo-big" style="background-image: url(/img/food_big.jpg);"></div>
 										<div class="three-photo-holder__photo-small three-photo-holder__photo-small_left" style="background-image: url(/img/food_big.jpg);"></div>
@@ -572,7 +572,7 @@
 
 				<!-- ===== задайте вопрос ===== -->
 
-				<div class="ask">
+				<!-- <div class="ask">
 					<h2 class="color_secondary">Задайте вопрос</h2>
 					<div class="section">
 						<div class="ask__director-info section">
@@ -585,6 +585,7 @@
 							</div>
 							
 						</div>
+
 						<div class="ask__form section">
 							
 								<div class="ask__form_left">
@@ -599,8 +600,40 @@
 								</div>							
 							
 						</div>
-					</div>
+					</div>						
+				</div> -->
+
+				<!-- ===== задайте вопрос конец ===== -->
+
+				<!-- ===== задайте вопрос ===== -->
+
+				<div class="ask">
+					<h2 class="color_secondary">Задайте вопрос</h2>
+					<div class="ask-content">
+
+						<div class="ask-content__director">
+							<div class="director-photo"></div>
+							<div class="director-text">
+								<p class="director-name">Гербер Оксана Евгеньевна</p>
+								<p class="director-position">Директор</p>
+								<p class="director-contacts">Тел.: (385-77) 2-37-41 
+								<br>E-mail: katun-san@yandex.ru</p>
+							</div>							
+						</div>
 						
+						<div class="ask-content__form">							
+							<div class="form-left">
+								<input type="text" placeholder="Ваше имя">
+								<textarea placeholder="Ваш вопрос"></textarea>
+							</div>
+							<div class="form-right">
+								<input type="text" placeholder="Номер телефона">
+								<input type="text" placeholder="E-mail">						
+								<input type="submit" value="Задать вопрос">
+							</div>								
+						</div>
+
+					</div>						
 				</div>
 
 				<!-- ===== задайте вопрос конец ===== -->

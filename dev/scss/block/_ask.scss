@@ -1,3 +1,5 @@
+
+
 .ask {
 	@include block_padding;
 	background-color: #efefef;
@@ -7,85 +9,162 @@
 		margin-bottom: 42px;
 	}
 }
-.ask__director-info {
-	
-	width: 30%;
-	margin-right: 10px;
 
-	.director-photo {
-		width: 134px;
-		height: 134px;
-		margin-right: 23px;
-
-		border-radius: 50%;
-		border: 2px solid #fff;
-		background-image: url(/img/director.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-	.director-name {
-		margin-bottom: 27px;
-		color: $color_secondary;
-		font-size: 15px;
-		font-weight: 600;
-	}
-	.director-position {
-		margin-bottom: 27px;
-		color: $color_secondary;
-		font-size: 14px;
-		font-weight: 400;
-	}
-	.director-contacts {
-		color: #535353;
-		font-size: 14px;
-	}
-
+// блок
+.ask-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+		@media screen and (max-width: 417px) {
+			width: 100%;
+			flex-direction: column;
+		}
 }
-.ask__form {
-	flex-basis: 67%;
-	flex-grow: 1;
-
-	.ask__form_left {
-		width: 65%;
-		margin-right: 10px;
-		flex-grow: 1;
-
-	}
-
-	.ask__form_right {
+	// элементы блока
+	.ask-content__director {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		margin-right: 25px;
 		width: 35%;
 		flex-grow: 1;
-	}
+			@media screen and (max-width: 1000px) {
+				width: 45%;
+			}
+			@media screen and (max-width: 800px) {
+				width: 40%;
+				flex-direction: column;
+			}
+			@media screen and (max-width: 417px) {
+				width: 100%;
+				flex-direction: column;
+				margin: 0 0 20px 0;
+			}		
+		// вложенные
+		.director-photo{							
+			flex-grow: 0;
+			flex-shrink: 0;			
+			width: 134px;
+			height: 134px;			
+			margin-right: 23px;			
+			border-radius: 50%;
+			border: 2px solid #fff;
+			background-image: url(/img/director.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+				@media screen and (max-width: 800px) {
+					margin-bottom: 15px;
+				}
+				@media screen and (max-width: 417px) {
+					margin: 0 auto;
+					margin-bottom: 15px;
+				}
+		}
+		.director-text {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			padding: 10px 0;
+			// вложенные
+			.director-name{
+				margin-bottom: 20px;
+				color: $color_secondary;
+				font-size: 15px;
+				font-weight: 600;
+					@media screen and (max-width: 417px) {
+						text-align: center;
+					}
+				}
+			.director-position{
+				margin-bottom: 20px;
+				color: $color_secondary;
+				font-size: 14px;				
+				font-weight: 400;
+					@media screen and (max-width: 417px) {
+						text-align: center;
+					}
 
-	// input[type=text],
-	// input[type=submit],
-	// textarea {
-	// 	margin-bottom: 10px;
-	// }
-	input[type=submit] {
-		background-color: $color_secondary;
-		color: #fff;
-		font-size: 14px;
-		// font-weight: 400;
-		cursor: pointer;
-	}
 
-	input[type=text],
-	input[type=submit] {
-		height: 42px;
-		width: 100%;
-	}
-	textarea {
-		width: 100%;
-		height: 94px;
-	}
+			}
+			.director-contacts{
+				color: #3b3b3b;
+				font-size: 14px;
+					@media screen and (max-width: 417px) {
+						text-align: center;
+					}
 
-	input[type=text],
-	textarea {
-		text-align: left;
-		padding-left: 15px;
-		background-color: #fff;
-		margin-bottom: 10px;
-		border: 0;
+
+			}
+		}
+		
 	}
+	.ask-content__form {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		width: 65%;
+		flex-grow: 1;
+			@media screen and (max-width: 1000px) {
+				width: 55%;
+			}
+			@media screen and (max-width: 800px) {
+				flex-direction: column;
+				width: 60%;
+			}
+			@media screen and (max-width: 417px) {
+				width: 100%;				
+			}
+
+		.form-left{
+			width: 50%;
+			margin-right: 10px;
+				@media screen and (max-width: 800px) {
+					width: 100%;
+				}
+				@media screen and (max-width: 417px) {
+					width: 100%;				
+				}
+		}
+		.form-right{
+			width: 50%;
+				@media screen and (max-width: 800px) {
+					width: 100%;
+				}
+				@media screen and (max-width: 417px) {
+					width: 100%;				
+				}
+		}
+
+		
+		input[type=text],
+		input[type=submit] {
+			height: 42px;
+			width: 100%;
+			color: black;
+		}
+		textarea {
+			width: 100%;
+			height: 94px;
+		}
+
+		input[type=text],
+		textarea {
+			text-align: left;
+			padding-left: 15px;
+			background-color: #fff;
+			margin-bottom: 10px;
+			border: 0;
+			color: #3b3b3b;
+		}
+		input[type=submit] {
+			background-color: $color_secondary;
+			color: #fff;
+			font-size: 14px;
+			// font-weight: 400;
+			cursor: pointer;
+		}
 }
