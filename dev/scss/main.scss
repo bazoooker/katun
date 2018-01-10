@@ -6,9 +6,10 @@
 @import "assets/stylesheets/var";
 @import "assets/stylesheets/mixin";
 
-// cannot go in base section because needs var and mixin
+// cannot be in base section because needs var and mixin
 @import "base/typography"; 
 
+@import "block/layout"; 
 @import "block/button";
 
 @import "block/container";
