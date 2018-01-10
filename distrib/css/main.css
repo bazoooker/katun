@@ -402,6 +402,17 @@ body {
 
 #footercontainer {
   background: #009e6a; }
+  @media screen and (max-width: 685px) {
+    #footercontainer {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse; } }
 
 #footer .logo {
   -webkit-box-sizing: border-box;
@@ -410,6 +421,18 @@ body {
   float: left;
   width: 38%;
   text-align: left; }
+  @media screen and (max-width: 885px) {
+    #footer .logo {
+      width: 50%; } }
+  @media screen and (max-width: 685px) {
+    #footer .logo {
+      width: 90%;
+      text-align: center;
+      padding: 0; } }
+  @media screen and (max-width: 438px) {
+    #footer .logo {
+      text-align: left;
+      margin: 20px 0 20px 25px; } }
 
 #footer .logo img {
   width: 85%;
@@ -427,6 +450,34 @@ body {
   padding: 40px;
   float: left;
   width: 38%; }
+  @media screen and (max-width: 885px) {
+    #footer .bottommenu {
+      width: 50%; } }
+  @media screen and (max-width: 685px) {
+    #footer .bottommenu {
+      width: 90%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: space-evenly;
+      -webkit-justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+      padding: 15px; } }
+  @media screen and (max-width: 438px) {
+    #footer .bottommenu {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-left: 20px; } }
 
 #footer .bottommenu ul {
   float: left;
@@ -436,6 +487,15 @@ body {
   list-style-type: none;
   padding: 0px;
   margin: 0px; }
+  @media screen and (max-width: 885px) {
+    #footer .bottommenu ul {
+      padding-right: 10px; } }
+  @media screen and (max-width: 685px) {
+    #footer .bottommenu ul {
+      width: 27%; } }
+  @media screen and (max-width: 438px) {
+    #footer .bottommenu ul {
+      width: 100%; } }
 
 #footer .bottommenu ul li {
   margin-bottom: 10px; }
@@ -454,6 +514,23 @@ body {
   background: url(/img/icon-phone-white.png) no-repeat 0px 8px;
   width: 24%;
   height: 52px; }
+  @media screen and (max-width: 885px) {
+    #footer .phonebutton {
+      float: left;
+      width: 260px;
+      margin-top: 10px;
+      padding: 14px 20px 80px 40px;
+      margin-left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); } }
+  @media screen and (max-width: 438px) {
+    #footer .phonebutton {
+      margin: 20px 20px 20px 25px;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+      padding: 14px 20px 20px 40px; } }
 
 #footer .phonebutton a {
   text-decoration: none;
@@ -667,8 +744,7 @@ body {
     .mobilemenu .bookingbutton {
       width: 100%;
       float: left;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      padding-bottom: 67px; } }
+      padding-bottom: 60px; } }
 
 .mobilemenu .bookingbutton a {
   text-decoration: none;

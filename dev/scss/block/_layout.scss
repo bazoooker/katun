@@ -210,7 +210,11 @@ body {
 	/*padding:5px 5px 0 5px;*/
 }
 #footercontainer {
-	background:#009e6a
+	background:#009e6a;
+		@media screen and (max-width: 685px) {
+			display: flex;
+			flex-direction: column-reverse;
+		}
 }
 
 
@@ -222,6 +226,18 @@ body {
 	float:left;
 	width:38%;
 	text-align:left;
+		@media screen and (max-width: 885px) {
+			width: 50%;
+		}
+		@media screen and (max-width: 685px) {
+			width: 90%;
+			text-align: center;
+			padding: 0;
+		}
+		@media screen and (max-width: 438px) {
+			text-align: left;
+			margin: 20px 0 20px 25px;
+		}
 }
 #footer .logo img{
 	width:85%;
@@ -238,6 +254,20 @@ body {
 	padding:40px;
 	float:left;
 	width:38%;
+		@media screen and (max-width: 885px) {
+			width: 50%;
+		}
+		@media screen and (max-width: 685px) {
+			width: 90%;			
+			display: flex;
+    		flex-direction: row;
+    		justify-content: space-evenly;
+    		padding: 15px;
+		}
+		@media screen and (max-width: 438px) {
+			flex-direction: column;
+			margin-left:20px;
+		}
 }
 #footer .bottommenu ul{
 	float:left;
@@ -247,6 +277,15 @@ body {
 	list-style-type:none;
 	padding:0px;
 	margin:0px;
+		@media screen and (max-width: 885px) {
+			padding-right: 10px;
+		}
+		@media screen and (max-width: 685px) {
+			width: 27%;
+		}
+		@media screen and (max-width: 438px) {
+			width: 100%;
+		}
 }
 #footer .bottommenu ul li{
 	margin-bottom:10px;
@@ -264,6 +303,19 @@ body {
 	background:url(/img/icon-phone-white.png) no-repeat 0px 8px;
 	width:24%;
 	height:52px;
+		@media screen and (max-width: 885px) {
+			float: left;
+			width: 260px;
+			margin-top: 10px;
+			padding: 14px 20px 80px 40px;
+			margin-left: 50%;
+    		transform: translateX(-50%);
+		}
+		@media screen and (max-width: 438px) {
+			margin: 20px 20px 20px 25px;
+			transform: none;
+			padding: 14px 20px 20px 40px;
+		}
 }
 #footer .phonebutton a{
 	text-decoration:none;
@@ -488,8 +540,8 @@ border-radius: 3px;
 	@media screen and (max-width: 470px) {
 		width: 100%;
 		float: left;
-		border-bottom: 1px solid rgba(255,255,255,.2);
-		padding-bottom: 67px;    	
+		// border-bottom: 1px solid rgba(255,255,255,.2);
+		padding-bottom: 60px;    	
 	}
 }
 .mobilemenu .bookingbutton a{
