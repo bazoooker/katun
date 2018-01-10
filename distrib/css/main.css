@@ -933,21 +933,6 @@ body {
 .input {
   float: left; }
 
-input[type=text] {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  border: 1px solid #fff;
-  color: #fff;
-  padding: 5px;
-  background: transparent;
-  border-radius: 3px;
-  text-align: center; }
-
-input[type=submit] {
-  border: 0;
-  border-radius: 3px; }
-
 .booking-row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1236,10 +1221,10 @@ input[type=text] {
   width: 100%;
   border: 1px solid #fff;
   color: #fff;
-  padding: 5px;
+  padding: 5px 5px 5px 10px;
   background: transparent;
   border-radius: 3px;
-  text-align: center; }
+  text-align: left; }
 
 input[type=submit] {
   border: 0;
@@ -1647,7 +1632,8 @@ input[type=submit] {
 
 .swiper-slide_infographics {
   width: 20%;
-  text-align: center; }
+  text-align: center;
+  padding: 0 3%; }
   .swiper-slide_infographics p {
     margin-top: 16px;
     font-weight: bold; }
