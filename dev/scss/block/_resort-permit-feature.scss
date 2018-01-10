@@ -24,13 +24,13 @@
 			}
 	}
 
-	&:hover .icon-container_hero {
-		transform: translateY(-5px);
-	}
+	// &:hover .icon-container_hero {
+	// 	transform: translateY(-5px);
+	// }
 
-	&:hover:after {
-		width: 70%;
-	}
+	// &:hover:after {
+	// 	width: 70%;
+	// }
 
 		@media screen and (max-width: 980px) {		
 		    width: 100%;

@@ -5,6 +5,7 @@
 
 @import "assets/stylesheets/var";
 @import "assets/stylesheets/mixin";
+@import "assets/stylesheets/lightbox.min";
 
 // cannot be in base section because needs var and mixin
 @import "base/typography"; 

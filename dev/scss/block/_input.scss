@@ -1,3 +1,14 @@
+input[type=text],
+input[type=submit],
+textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+textarea {
+    padding-top: 12px;
+}
+
 input[type=text]  {
 	box-sizing: border-box;
     width: 100%;
@@ -11,7 +22,8 @@ input[type=text]  {
     text-align: left;
 }
 
-input[type=submit] {
+input[type=submit],
+textarea {
 	border: 0;
 	-webkit-border-radius: 3px;
     -moz-border-radius: 3px;

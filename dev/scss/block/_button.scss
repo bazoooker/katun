@@ -6,7 +6,7 @@
 	cursor: pointer;
 	position: relative;
 	display: inline-block;
-	transition: 500ms;
+	transition: 300ms;
 	overflow: hidden;
 
 	// делаем кнопки поверх всех :after и :before
@@ -14,22 +14,19 @@
 
 	&:after {
 		position: absolute;
-		top: -357%;
-    	left: -22%;
+		top: 0;
+    	left: 0;
 		width: 0;
-		height: 0;
-		background-color: rgba(255,255,255,.2);
+		height: 100%;
+		background-color: rgba(255,255,255,.2);		
 		z-index: 2;
-		content: "";
-		border-radius: 50%;
-		transition: 500ms;
+		content: "";		
+		transition: 300ms;
 	}
 	&:hover:after {
-		width: 300px;
-		height: 300px;
+		width: 100%;
 	}
 }
-
 
 // modificators
 .btn_color-main {
@@ -61,5 +58,10 @@
 }
 .btn_transparent:hover {
 	color: #fff;		
+}
+
+.btn_color-secondary:hover {
+	background-color: #fff;
+	color: $color_main;
 }
 
