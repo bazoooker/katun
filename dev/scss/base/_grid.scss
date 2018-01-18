@@ -9,10 +9,7 @@
 .pull-left{float: left;}
 
 .hidden {
-	display: none;
-	opacity: 0;
-	width: 0;
-	transform: translateX(30px);
+	display: none !important;
 }
 
 .text-center {

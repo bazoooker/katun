@@ -1,0 +1,39 @@
+// block
+.slide{}
+
+.slide_course {}
+.slide_treatment {}
+.slide_food {
+	display: flex;   
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.slide_factor {
+    display: flex;   
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.slide_course {
+	padding-left: 47px;
+
+		@media screen and (max-width: 768px) {
+			padding: 37px 37px 37px 37px;
+		    margin: 20px;
+		    border: 1px solid #fff;
+		    background-color: rgba(255,255,255,.1);
+		}
+		@media screen and (max-width: 480px) {
+			padding: 20px 20px 20px 20px;
+		}
+
+	.headline {
+		margin-bottom: 28px;
+		font-size: 20px;
+		font-weight: 400;
+	}
+	p {
+		margin-bottom: 18px;
+		line-height: 21px;
+		font-weight: 400;
+	}
+}

@@ -252,11 +252,11 @@
 					<div class="section-tabs">
 						<div class="section-tabs__tabs">
 							<ul>
-								<li onclick="openTab2(1)" id="course-tab-1" class="tab tab_about-food tab_active">Шведский стол</li>
-								<li onclick="openTab2(2)" id="course-tab-2" class="tab tab_about-food">Шведский стол ЛЮКС</li>
-								<li onclick="openTab2(3)" id="course-tab-3" class="tab tab_about-food">Диетическое питание</li>
-								<li onclick="openTab2(4)" id="course-tab-4" class="tab tab_about-food">Ужин в ресторане a-la carte</li>							
-								<li onclick="openTab2(5)" id="course-tab-5" class="tab tab_about-food">Банкеты, фуршеты</li>								
+								<li onclick="tabSwitch('food', 1)" class="tab tab_food active">Шведский стол</li>
+								<li onclick="tabSwitch('food', 2)" class="tab tab_food">Шведский стол ЛЮКС</li>
+								<li onclick="tabSwitch('food', 3)" class="tab tab_food">Диетическое питание</li>
+								<li onclick="tabSwitch('food', 4)" class="tab tab_food">Ужин в ресторане a-la carte</li>					
+								<li onclick="tabSwitch('food', 5)" class="tab tab_food">Банкеты, фуршеты</li>								
 							</ul>
 						</div>
 
@@ -264,7 +264,92 @@
 						<!-- TODO если фото справа не будут меняться, поместить контейнер для слайда внутри первого section__half. Если же будут, то нужно менять весь section - нужна обертка для него -->
 
 						<div class="section-tabs__content">
-							<div class="tab-slide">
+							<div id="slide_food-1" class="slide_food">
+							
+								<div class="tab-slide__text">
+									<p>111Меню сбалансировано по белковым, углеводным и жировым составляющим, разработано с учетом физиологических норм и потребностей организма и пищевой ценности каждого блюда.  </p>
+
+									<p>В рацион включены различные овощные, крупяные, молочные, мясные и рыбные закуски  различных способов приготовления (тушение, варка, жарка, запекание). Меню чередуется по дням недели. </p>
+
+									<p>Весь ассортимент блюд находится на современных шведских линиях, что дает возможность дольше сохранять блюда в подогретом виде и избегать проблемы скученности гостей в одном месте. Выбор блюд и напитков осуществляется отдыхающими самостоятельно, размер порций и количество подходов  к «шведскому столу» не ограничены. </p>
+
+									<p>В утренние часы для гостей ресторана работает открытая линия, блюда на завтрак готовятся на виду у отдыхающих. </p>
+
+									<p>Отдыхающие, испытывающие недомогание или с физическими недостатками, обслуживаются индивидуально через официанта. </p>
+
+									<p>Для гостей, соблюдающий пост, разгрузочные дни, вегетарианство, применяется индивидуальный подход.</p>
+
+									<p>Для всех посетителей ресторана ежедневно - вечерний кефир.</p>
+								</div>
+
+								<div class="tab-slide__photo">
+									<div class="three-photo-holder">
+										<a data-lightbox="about-food with-lightbox-overlay" data-title="Питание в санатории" href="/img/food_big.jpg" class="three-photo-holder__photo-big" style="background-image: url(/img/food_big.jpg);"></a>
+										<a data-lightbox="about-food with-lightbox-overlay" data-title="Питание в санатории" href="/img/food_big.jpg" class="three-photo-holder__photo-small three-photo-holder__photo-small_left" style="background-image: url(/img/food_big.jpg);"></a>
+										<a data-lightbox="about-food with-lightbox-overlay" data-title="Питание в санатории" href="/img/food_big.jpg" class="three-photo-holder__photo-small" style="background-image: url(/img/food_big.jpg");"></a>
+									</div>
+								</div>							
+							
+							</div>
+
+
+							<div id="slide_food-2" class="slide_food hidden">
+							
+								<div class="tab-slide__text">
+									<p>222Меню сбалансировано по белковым, углеводным и жировым составляющим, разработано с учетом физиологических норм и потребностей организма и пищевой ценности каждого блюда.  </p>
+
+									<p>В рацион включены различные овощные, крупяные, молочные, мясные и рыбные закуски  различных способов приготовления (тушение, варка, жарка, запекание). Меню чередуется по дням недели. </p>
+
+									<p>Весь ассортимент блюд находится на современных шведских линиях, что дает возможность дольше сохранять блюда в подогретом виде и избегать проблемы скученности гостей в одном месте. Выбор блюд и напитков осуществляется отдыхающими самостоятельно, размер порций и количество подходов  к «шведскому столу» не ограничены. </p>
+
+									<p>В утренние часы для гостей ресторана работает открытая линия, блюда на завтрак готовятся на виду у отдыхающих. </p>
+
+									<p>Отдыхающие, испытывающие недомогание или с физическими недостатками, обслуживаются индивидуально через официанта. </p>
+
+									<p>Для гостей, соблюдающий пост, разгрузочные дни, вегетарианство, применяется индивидуальный подход.</p>
+
+									<p>Для всех посетителей ресторана ежедневно - вечерний кефир.</p>
+								</div>
+
+								<div class="tab-slide__photo">
+									<div class="three-photo-holder">
+										<a data-lightbox="about-food with-lightbox-overlay" data-title="Питание в санатории" href="/img/food_big.jpg" class="three-photo-holder__photo-big" style="background-image: url(/img/food_big.jpg);"></a>
+										<a data-lightbox="about-food with-lightbox-overlay" data-title="Питание в санатории" href="/img/food_big.jpg" class="three-photo-holder__photo-small three-photo-holder__photo-small_left" style="background-image: url(/img/food_big.jpg);"></a>
+										<a data-lightbox="about-food with-lightbox-overlay" data-title="Питание в санатории" href="/img/food_big.jpg" class="three-photo-holder__photo-small" style="background-image: url(/img/food_big.jpg");"></a>
+									</div>
+								</div>							
+							
+							</div>
+
+							<div id="slide_food-3" class="slide_food hidden">
+							
+								<div class="tab-slide__text">
+									<p>333Меню сбалансировано по белковым, углеводным и жировым составляющим, разработано с учетом физиологических норм и потребностей организма и пищевой ценности каждого блюда.  </p>
+
+									<p>В рацион включены различные овощные, крупяные, молочные, мясные и рыбные закуски  различных способов приготовления (тушение, варка, жарка, запекание). Меню чередуется по дням недели. </p>
+
+									<p>Весь ассортимент блюд находится на современных шведских линиях, что дает возможность дольше сохранять блюда в подогретом виде и избегать проблемы скученности гостей в одном месте. Выбор блюд и напитков осуществляется отдыхающими самостоятельно, размер порций и количество подходов  к «шведскому столу» не ограничены. </p>
+
+									<p>В утренние часы для гостей ресторана работает открытая линия, блюда на завтрак готовятся на виду у отдыхающих. </p>
+
+									<p>Отдыхающие, испытывающие недомогание или с физическими недостатками, обслуживаются индивидуально через официанта. </p>
+
+									<p>Для гостей, соблюдающий пост, разгрузочные дни, вегетарианство, применяется индивидуальный подход.</p>
+
+									<p>Для всех посетителей ресторана ежедневно - вечерний кефир.</p>
+								</div>
+
+								<div class="tab-slide__photo">
+									<div class="three-photo-holder">
+										<a data-lightbox="about-food with-lightbox-overlay" data-title="Питание в санатории" href="/img/food_big.jpg" class="three-photo-holder__photo-big" style="background-image: url(/img/food_big.jpg);"></a>
+										<a data-lightbox="about-food with-lightbox-overlay" data-title="Питание в санатории" href="/img/food_big.jpg" class="three-photo-holder__photo-small three-photo-holder__photo-small_left" style="background-image: url(/img/food_big.jpg);"></a>
+										<a data-lightbox="about-food with-lightbox-overlay" data-title="Питание в санатории" href="/img/food_big.jpg" class="three-photo-holder__photo-small" style="background-image: url(/img/food_big.jpg");"></a>
+									</div>
+								</div>							
+							
+							</div>
+
+							<!-- <div class="tab-slide">
 							
 								<div class="tab-slide__text">
 									<p>Меню сбалансировано по белковым, углеводным и жировым составляющим, разработано с учетом физиологических норм и потребностей организма и пищевой ценности каждого блюда.  </p>
@@ -290,7 +375,9 @@
 									</div>
 								</div>							
 							
-							</div>	
+							</div> -->		
+
+
 						</div>
 						
 					</div>
@@ -320,33 +407,44 @@
 
 
 
+				<!-- ===== необходимые документы ===== -->
 
-
-			  	<!-- ===== необходимые документы ===== -->
-			  	<div class="documents">
+				<div class="documents">
 			  		<h2 class="color_main">Необходимые документы</h2>
 
-			  		<div class="section">					
+					<div class="section">					
 						<div class="section__part-small treatment-content-tabs section_left">
 
 							<ul>
-								<li id="treatment-tab-1" class="treatment-content-tab treatment-content-tab_active"  onclick="openTab(1)">
-									Из чего состоит лечение в Санатории Катунь?
+								<li class="tab tab_documents active"  onclick="tabSwitch('documents', 1)">
+									Необходимые документы 1
 								</li>
-								<li id="treatment-tab-2" class="treatment-content-tab"  onclick="openTab(2)">
-									Из чего состоит лечение в Санатории Катунь?
+								<li class="tab tab_documents"  onclick="tabSwitch('documents', 2)">
+									Необходимые документы 2
 								</li>
-								<li id="treatment-tab-3" class="treatment-content-tab"  onclick="openTab(3)">
-									Из чего состоит лечение в Санатории Катунь?
+								<li class="tab tab_documents"  onclick="tabSwitch('documents', 3)">
+									Необходимые документы 3
 								</li>
 							</ul>
-							
+
+							<!-- <ul>
+								<li id="treatment-tab-1" class="treatment-content-tab active"  onclick="tabSwitch('treatment', 1)">
+									Из чего состоит лечение в Санатории Катунь?
+								</li>
+								<li id="treatment-tab-2" class="treatment-content-tab"  onclick="tabSwitch('treatment', 1)">
+									Из чего состоит лечение в Санатории Катунь?
+								</li>
+								<li id="treatment-tab-3" class="treatment-content-tab"  onclick="tabSwitch('treatment', 1)">
+									Из чего состоит лечение в Санатории Катунь?
+								</li>
+							</ul> -->
+
 						</div>
 
 						<div class="section__part-big treatment-content-text">
 
-							<div class="treatment-content-text__tab-contents" id="tab-contents-1">
-								<p class="headline">Вы получите индивидуальный оздоровительный комплекс, состоящий из:</p>
+							<div id="slide_documents-1" class="slide_documents">
+								<p class="headline">Необходимые документы 1</p>
 								<ul class="checklist">
 									<li>Консультаций высококвалифицированных врачей</li>
 									<li>От 5 лечебных процедур по основному заболеванию</li>
@@ -355,8 +453,8 @@
 								</ul>
 							</div>
 
-							<div class="treatment-content-text__tab-contents hidden" id="tab-contents-2">
-								<p class="headline">Лечение состоит из 1</p>
+							<div id="slide_documents-2" class="slide_documents hidden">
+								<p class="headline">Необходимые документы 2</p>
 								<ul class="checklist">
 									<li>1 Консультаций высококвалифицированных врачей</li>
 									<li>1 От 5 лечебных процедур по основному заболеванию</li>
@@ -365,8 +463,8 @@
 								</ul>
 							</div>
 
-							<div class="treatment-content-text__tab-contents hidden" id="tab-contents-3">
-								<p class="headline">Лечение состоит из 2</p>
+							<div id="slide_documents-3" class="slide_documents hidden">
+								<p class="headline">Необходимые документы 3</p>
 								<ul class="checklist">
 									<li>2 Консультаций высококвалифицированных врачей</li>
 									<li>2 От 5 лечебных процедур по основному заболеванию</li>
@@ -374,10 +472,20 @@
 									<li>2 Обследования, результаты которых признаются всеми центрами России</li>
 								</ul>
 							</div>
+
+							<!-- <div class="treatment-content-text__tab-contents hidden" id="tab-contents-3">
+								<p class="headline">Лечение состоит из 2</p>
+								<ul class="checklist">
+									<li>2 Консультаций высококвалифицированных врачей</li>
+									<li>2 От 5 лечебных процедур по основному заболеванию</li>
+									<li>2 1-2 лечебные процедуры по сопутствующему заболеванию</li>
+									<li>2 Обследования, результаты которых признаются всеми центрами России</li>
+								</ul>
+							</div> -->
 						</div>
 					</div>
-			  	</div>				
-			  	<!-- ===== необходимые документы конец ===== -->
+				</div>
+			  	<!-- ===== необходимые документы конец ===== -->		
 				
 
 
@@ -385,7 +493,7 @@
 			  	<div class="feedback">
 			  		<h2 class="color_secondary">Отзывы</h2>
 			  		<div class="section">
-			  			<div class="section__half feedback__item section_left">
+			  			<div class="feedback__item">
 			  				
 			  					<p>Были с мужем на Алтае и в санатории "Катунь" в первый раз. Все очень понравилось: лечение, обслуживание, доброжелательность и отзывчивость сотрудников санатория, четкость в организации работы персонала. Очень впечатлила природа. Особую благодарность выражаю лечащему врачу-кардиологу Штрумбергер Елене Владимировне, врачу - ревматологу Кузнецову Павлу Игоревичу и массажисту Евсину Александру Владимировичу за профессионализм и доброжелательность. Желаю удачи и процветания санаторию.</p>
 
@@ -395,7 +503,7 @@
 			  					</div>
 			  				
 			  			</div>
-			  			<div class="section__half feedback__item section_right">
+			  			<div class="feedback__item">
 			  				
 			  					<p>Были с мужем на Алтае и в санатории "Катунь" в первый раз. Все очень понравилось: лечение, обслуживание, доброжелательность и отзывчивость сотрудников санатория, четкость в организации работы персонала. Очень впечатлила природа. Особую благодарность выражаю лечащему врачу-кардиологу Штрумбергер Елене Владимировне, врачу - ревматологу Кузнецову Павлу Игоревичу и массажисту Евсину Александру Владимировичу за профессионализм и доброжелательность. Желаю удачи и процветания санаторию.</p>
 

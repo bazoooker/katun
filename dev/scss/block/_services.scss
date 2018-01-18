@@ -1,12 +1,12 @@
 // block
-.services {
-	@include block_padding;	
-	margin-bottom: 10px;
+.services {	
+	padding: 37px 0;
+	margin: 10px 0;
 	h2 {
-		padding-bottom: 26px;
+		padding:0 0 26px 37px;
 	}
 	p {
-		margin-bottom: 41px;
+		padding:0 0 26px 37px;
 	}
 }
 

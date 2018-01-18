@@ -26,27 +26,29 @@
 	}
 	&:hover:before {
 		right: 17px;
+	}
+
+
+	&.active {
+		cursor: pointer;
+		transition: 200ms;
+		background-color: $color_main;
+		color: #fff;	
+		
+		&:before {
+			position: absolute;
+			top: 50%;
+			right: 17px;
+			width: 5px;
+			height: 5px;
+			border-bottom: 2px solid #fff;
+			border-right: 2px solid #fff;
+			transform: rotate(-45deg);
+			content: "";
+		}
 	}	
 }
 
-.treatment-content-tab_active {
-	cursor: pointer;
-	transition: 200ms;
-	background-color: $color_main;
-	color: #fff;	
-	
-	&:before {
-		position: absolute;
-		top: 50%;
-		right: 17px;
-		width: 5px;
-		height: 5px;
-		border-bottom: 2px solid #fff;
-		border-right: 2px solid #fff;
-		transform: rotate(-45deg);
-		content: "";
-	}
-}
 
 
 .swiper-pagination-bullet {

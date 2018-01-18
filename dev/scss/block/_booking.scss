@@ -3,7 +3,8 @@
 	background-color: $color_main;
 	// width: 290px;
 	min-height: 300px;
-	@include block_padding;
+	padding: 37px;
+	// margin-bottom: 10px;
 	@media screen and (max-width: 768px) {
 		margin-top: 10px;
 	}

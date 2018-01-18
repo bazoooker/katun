@@ -3,6 +3,9 @@
 		list-style: none;
 		font-size: 15px;
 		font-weight: 300;
+			@media screen and (max-width: 768px) {
+				margin-bottom: 15px;
+			}
 	}
 	.checklist li {position: relative; padding-bottom: 8px;}
 	.checklist li:before {

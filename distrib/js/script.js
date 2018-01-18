@@ -1,43 +1,25 @@
 
-// табы из чего состоит лечение
+// табы
+function tabSwitch(tabName, slideNumber) {
 
-function openTab(tabNumber){ 
-    $(".treatment-content-tab").removeClass("treatment-content-tab_active");
-    $(".treatment-content-text__tab-contents").addClass("hidden");
-   
-    if (tabNumber == 1) {
-        $("#tab-contents-1").removeClass("hidden");
-        $("#treatment-tab-1").addClass("treatment-content-tab_active");
+    var slidesList = document.querySelectorAll('.slide_'+tabName); 
+
+    for (var i = 0; i < slidesList.length; i++) {          
+        $(slidesList[i]).fadeOut(0);            
     }
-    else if (tabNumber == 2) {
-        $("#tab-contents-2").removeClass("hidden");
-        $("#treatment-tab-2").addClass("treatment-content-tab_active");
+
+    var curSlide = document.getElementById('slide_'+tabName+'-'+slideNumber);        
+    curSlide.classList.remove('hidden');    
+    $(curSlide).fadeIn(200);             
+
+    var allTabs = document.querySelectorAll('.tab_'+tabName);
+
+    for (var i = 0; i < allTabs.length; i++) {          
+        $(allTabs[i]).removeClass('active');            
     }
-    else if (tabNumber == 3) {
-        $("#tab-contents-3").removeClass("hidden");
-        $("#treatment-tab-3").addClass("treatment-content-tab_active");
-    }    
-};
 
-// табы лечение по направлениям
-
-function openTab2(tabNumber){
-
-    // уберем у всех табов класс "активная" 
-    $(".tab").removeClass("tab_active");
-
-    // скроем все блоки содежримого табов
-    $(".treatment-course__tab-contents").addClass("hidden");
-   
-   // если нажат таб-1
-        // покажем соответствующий блок контента
-        $("#treatment-course__tab-contents-"+tabNumber).removeClass("hidden");
-
-        // выделим соответствующий таб
-        $("#course-tab-"+tabNumber).addClass("tab_active");
-
-};
-
+    event.target.classList.add('active');
+}
 
 
 

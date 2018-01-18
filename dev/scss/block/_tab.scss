@@ -1,39 +1,117 @@
+// block
 .tab {
 	list-style: none;
 	font-size: 15px;	
 	font-weight: 400;
 	cursor: pointer;
+	transition: 300ms;
 }
 
-.tab_course {
-	padding: 8px 0;
-	padding-left: 37px;	
-	color: #fff;
-	background-color: transparent;
 
-		&.tab_active {
-			background-color: $color_main;
-		}		
-}
 
-.tab_about-food {
-	padding: 8px 0;
-	padding-left: 37px;
-	color: $color_main;	
-	background-color: transparent;
-	margin-left: -37px;
+	// modificators
+	.tab_course {
+		padding: 8px 0;
+		padding-left: 37px;	
+		color: #fff;
+		background-color: transparent;
 
-		&.tab_active {
-			background-color: $color_main;
-			color: #fff;
+			&.active {
+				background-color: $color_main;
+			}
+			@media screen and (max-width: 768px) {
+				margin-left: -20px;			
+				margin-right: -20px;			
+			}		
+	}
+
+	.tab_food {
+		padding: 8px 0;
+		padding-left: 37px;
+		color: $color_main;	
+		background-color: transparent;
+		margin-left: -37px;
+
+			&.active {
+				background-color: $color_main;
+				color: #fff;
+			}
+
+			@media screen and (max-width: 768px) {
+				margin-left: -20px;			
+				margin-right: -20px;			
+			}
+
+	}
+
+	.tab_factor{
+		padding: 8px 0;
+		padding-left: 37px;
+		color: $color_main;	
+		background-color: transparent;
+		margin-left: -37px;
+
+			&.active {
+				background-color: $color_main;
+				color: #fff;
+			}
+
+			@media screen and (max-width: 768px) {
+				margin-left: -20px;			
+				margin-right: -20px;			
+			}
+	}
+
+	.tab_treatment,
+	.tab_documents {
+	position: relative;
+	background-color: #e5f5f0;
+	// border-left: 3px solid #e5f5f0;
+	cursor: pointer;
+	list-style: none;
+	color: $color_main;
+	flex-grow: 1;
+
+	display: flex;
+	flex-direcrion: row;
+	align-items: center;
+	padding: 20px 37px;
+
+	&:before {
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		width: 5px;
+		height: 5px;
+		border-bottom: 2px solid $color_main;
+		border-right: 2px solid $color_main;
+		transform: rotate(-45deg);
+		transition: 200ms;
+		content: "";
+	}
+	&:hover:before {
+		right: 17px;
+	}
+
+
+	&.active {
+		cursor: pointer;
+		transition: 200ms;
+		background-color: $color_main;
+		color: #fff;	
+		
+		&:before {
+			position: absolute;
+			top: 50%;
+			right: 17px;
+			width: 5px;
+			height: 5px;
+			border-bottom: 2px solid #fff;
+			border-right: 2px solid #fff;
+			transform: rotate(-45deg);
+			content: "";
 		}
-
-		@media screen and (max-width: 768px) {
-			margin-left: -20px;			
-			margin-right: -20px;			
-		}
-
+	}	
 }
 
-	// states
 	

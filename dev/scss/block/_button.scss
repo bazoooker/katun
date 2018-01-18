@@ -1,6 +1,6 @@
 // block
 .btn {
-	padding: 9px 18px;
+	padding: 9px 16px;
 	border-radius: 5px;
 	text-decoration: none;
 	cursor: pointer;
@@ -8,6 +8,7 @@
 	display: inline-block;
 	transition: 300ms;
 	overflow: hidden;
+	font-size: 14px;
 
 	// делаем кнопки поверх всех :after и :before
 	z-index: 1; 
@@ -45,7 +46,20 @@
 .btn_transparent {
 	color: #fff;
 	background-color: transparent;
-	border: 1px solid #fff;		
+	border: 1px solid #fff;
+	min-width: 183px;
+	text-align: center;		
+}
+.btn_outline {
+	color: $color_main;
+	background-color: transparent;
+	border: 1px solid $color_main;
+	min-width: 183px;
+	text-align: center;
+	&:after	 {
+		background-color: $color_main;
+		opacity: .1
+	}
 }
 
 

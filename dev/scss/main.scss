@@ -1,8 +1,10 @@
+// base
 @import "base/reset";
 @import "base/scale";
 @import "base/fonts";
 @import "base/grid";
 
+// vars and mixins
 @import "assets/stylesheets/var";
 @import "assets/stylesheets/mixin";
 @import "assets/stylesheets/lightbox.min";
@@ -10,6 +12,7 @@
 // cannot be in base section because needs var and mixin
 @import "base/typography"; 
 
+// blocks
 @import "block/layout"; 
 @import "block/button";
 
@@ -32,6 +35,7 @@
 @import "block/treatment-content-tab";
 @import "block/treatment-content-text";
 @import "block/treatment-course";
+@import "block/treatment-hero";
 
 @import "block/course-tab";
 
@@ -39,24 +43,36 @@
 @import "block/why-katun-features-holder";
 
 @import "block/food";
+
 @import "block/photo-tile";
 
 @import "block/checklist";
 
 @import "block/services";
+
 @import "block/book-cheaper";
+
 @import "block/swiper";
 
 @import "block/accommodation-and-about";
 @import "block/accommodation-swiper";
 @import "block/accommodation-slide";
 @import "block/accommodation-pagination-link";
+
 @import "block/about-sanatorium";
+
 @import "block/about-food";
-@import "block/tab";
+
+@import "block/tab"; /*стили всех табов*/
+@import "block/slide"; /*стили всех вариантов содержимого табов*/
+
+
 @import "block/three-photo-holder";
+
 @import "block/sertification";
+
 @import "block/documents";
+
 @import "block/feedback";
 
 @import "block/photoalbum";
@@ -73,8 +89,6 @@
 
 @import "block/with-lightbox-overlay";
 
+@import "block/heal-place";
 
-
-
-
-
+@import "block/lightbox-img";

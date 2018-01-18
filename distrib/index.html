@@ -191,34 +191,34 @@
 					<div class="section__part-small treatment-content-tabs section_left">
 
 						<ul>
-							<li id="treatment-tab-1" class="treatment-content-tab treatment-content-tab_active"  onclick="openTab(1)">
+							<li id="treatment-tab-1" class="tab tab_treatment active"  onclick="tabSwitch('treatment', 1)">
 								Из чего состоит лечение в Санатории Катунь?
 							</li>
-							<li id="treatment-tab-2" class="treatment-content-tab"  onclick="openTab(2)">
+							<li id="treatment-tab-2" class="tab tab_treatment"  onclick="tabSwitch('treatment', 2)">
 								Из чего состоит лечение в Санатории Катунь?
 							</li>
-							<li id="treatment-tab-3" class="treatment-content-tab"  onclick="openTab(3)">
+							<li id="treatment-tab-3" class="tab tab_treatment"  onclick="tabSwitch('treatment', 3)">
 								Из чего состоит лечение в Санатории Катунь?
 							</li>
 						</ul>
 
+						<!-- <ul>
+							<li id="treatment-tab-1" class="treatment-content-tab active"  onclick="tabSwitch('treatment', 1)">
+								Из чего состоит лечение в Санатории Катунь?
+							</li>
+							<li id="treatment-tab-2" class="treatment-content-tab"  onclick="tabSwitch('treatment', 1)">
+								Из чего состоит лечение в Санатории Катунь?
+							</li>
+							<li id="treatment-tab-3" class="treatment-content-tab"  onclick="tabSwitch('treatment', 1)">
+								Из чего состоит лечение в Санатории Катунь?
+							</li>
+						</ul> -->
 
-
-
-						<!-- <div class="treatment-content-tab treatment-content-tab_active"  onclick="openTab(1)">
-							<p>Из чего состоит лечение в Санатории Катунь?</p>
-						</div>
-						<div class="treatment-content-tab" onclick="openTab(2)">
-							<p>Из чего состоит лечение в Санатории Катунь?</p>
-						</div>
-						<div class="treatment-content-tab" onclick="openTab(3)">
-							<p>Из чего состоит лечение в Санатории Катунь?</p>
-						</div> -->
 					</div>
 
 					<div class="section__part-big treatment-content-text">
 
-						<div class="treatment-content-text__tab-contents" id="tab-contents-1">
+						<div id="slide_treatment-1" class="slide_treatment">
 							<p class="headline">Вы получите индивидуальный оздоровительный комплекс, состоящий из:</p>
 							<ul class="checklist">
 								<li>Консультаций высококвалифицированных врачей</li>
@@ -228,7 +228,7 @@
 							</ul>
 						</div>
 
-						<div class="treatment-content-text__tab-contents hidden" id="tab-contents-2">
+						<div id="slide_treatment-2" class="slide_treatment hidden">
 							<p class="headline">Лечение состоит из 1</p>
 							<ul class="checklist">
 								<li>1 Консультаций высококвалифицированных врачей</li>
@@ -238,7 +238,7 @@
 							</ul>
 						</div>
 
-						<div class="treatment-content-text__tab-contents hidden" id="tab-contents-3">
+						<div id="slide_treatment-3" class="slide_treatment hidden">
 							<p class="headline">Лечение состоит из 2</p>
 							<ul class="checklist">
 								<li>2 Консультаций высококвалифицированных врачей</li>
@@ -247,53 +247,91 @@
 								<li>2 Обследования, результаты которых признаются всеми центрами России</li>
 							</ul>
 						</div>
+
+						<!-- <div class="treatment-content-text__tab-contents hidden" id="tab-contents-3">
+							<p class="headline">Лечение состоит из 2</p>
+							<ul class="checklist">
+								<li>2 Консультаций высококвалифицированных врачей</li>
+								<li>2 От 5 лечебных процедур по основному заболеванию</li>
+								<li>2 1-2 лечебные процедуры по сопутствующему заболеванию</li>
+								<li>2 Обследования, результаты которых признаются всеми центрами России</li>
+							</ul>
+						</div> -->
 					</div>
 				</div>
 			  	<!-- ===== из чего состоит лечение конец ===== -->
 
 
 
-				<!-- ===== лечение по направлениям ===== -->
-				<div class="treatment-course">	
+				<div class="treatment-course">	<!-- ===== treatment courses ===== -->
 					<h2 class="color_white">Лечение по направлениям</h2>
 
 					<div class="section">
 						<div class="section__part-small treatment-course__tabs">
 							<ul>
-								<li onclick="openTab2(1)" id="course-tab-1" class="tab tab_course tab_active">Гастроэнтерология</li>
-								<li onclick="openTab2(2)" id="course-tab-2" class="tab tab_course">Сердечно-сосудистая система</li>
-								<li onclick="openTab2(3)" id="course-tab-3" class="tab tab_course">Опорно-двигательный аппарат</li>
-								<li onclick="openTab2(4)" id="course-tab-4" class="tab tab_course">Гинекология</li>							
-								<li onclick="openTab2(5)" id="course-tab-5" class="tab tab_course">Нервная система</li>
-								<li onclick="openTab2(6)" id="course-tab-6" class="tab tab_course">Болезни кожи</li>
-								<li onclick="openTab2(7)" id="course-tab-7" class="tab tab_course">Психотерапия</li>
-								<li onclick="openTab2(8)" id="course-tab-8" class="tab tab_course">Лечение детей</li>
+								<li onclick="tabSwitch('course', 1)" class="tab tab_course active">Гастроэнтерология</li>
+								<li onclick="tabSwitch('course', 2)" class="tab tab_course">Сердечно-сосудистая система</li>
+								<li onclick="tabSwitch('course', 3)" class="tab tab_course">Опорно-двигательный аппарат</li>
+								<li onclick="tabSwitch('course', 4)" class="tab tab_course">Гинекология</li>			
+								<li onclick="tabSwitch('course', 5)" class="tab tab_course">Нервная система</li>
+								<li onclick="tabSwitch('course', 6)" class="tab tab_course">Болезни кожи</li>
+								<li onclick="tabSwitch('course', 7)" class="tab tab_course">Психотерапия</li>
+								<li onclick="tabSwitch('course', 8)" class="tab tab_course">Лечение детей</li>
 							</ul>
 						</div>
 
 						<div class="section__part-big">
-							<div id="treatment-course__tab-contents-1" class="treatment-course__tab-contents">
+							<div id="slide_course-1" class="slide_course">
 								<p class="headline color_white">Гастроэнтерология</p>
 								<p class="color_white">На базе гастроэнтерологического отделения <br>проводится долечивание больных после <br>операций по поводу язвенной болезни <br>желудка, двенадцатиперстной кишки, удаления желчного пузыря.</p>
 								<button class="btn btn_transparent">Подробнее о лечении</button>
 							</div>
 
-							<div id="treatment-course__tab-contents-2" class="treatment-course__tab-contents hidden">
+							<div id="slide_course-2" class="slide_course hidden">
 								<p class="headline color_white">Сердечно-сосудистая система</p>
 								<p class="color_white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ut, vel quibusdam explicabo reprehenderit possimus praesentium tempora quod nulla voluptas asperiores, porro minus sed ipsum soluta veritatis ratione esse a.</p>
 								<button class="btn btn_transparent">Подробнее о лечении</button>
 							</div>
 
-							<div id="treatment-course__tab-contents-3" class="treatment-course__tab-contents hidden">
+							<div id="slide_course-3" class="slide_course hidden">
 								<p class="headline color_white">Опорно-двигательный аппарат</p>
 								<p class="color_white"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic officiis velit aperiam id fugit quas eum iusto libero aliquam deserunt animi perferendis quibusdam, minima quaerat architecto, praesentium, fuga repellat quo!</span><span>Totam alias, doloribus quam atque veniam repudiandae illo dolor, harum inventore porro at. Est quidem aut ex libero debitis iste ipsum, explicabo quos, illum hic natus, nobis pariatur corporis labore?</span></p>
 								<button class="btn btn_transparent">Подробнее о лечении</button>
 							</div>
-							
+
+							<div id="slide_course-4" class="slide_course hidden">
+								<p class="headline color_white">Гинекология</p>
+								<p class="color_white"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic officiis velit aperiam id fugit quas eum iusto libero aliquam deserunt animi perferendis quibusdam, minima quaerat architecto, praesentium, fuga repellat quo!</span><span>Totam alias, doloribus quam atque veniam repudiandae illo dolor, harum inventore porro at. Est quidem aut ex libero debitis iste ipsum, explicabo quos, illum hic natus, nobis pariatur corporis labore?</span></p>
+								<button class="btn btn_transparent">Подробнее о лечении</button>
+							</div>
+
+							<div id="slide_course-5" class="slide_course hidden">
+								<p class="headline color_white">Нерваная система</p>
+								<p class="color_white"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic officiis velit aperiam id fugit quas eum iusto libero aliquam deserunt animi perferendis quibusdam, minima quaerat architecto, praesentium, fuga repellat quo!</span><span>Totam alias, doloribus quam atque veniam repudiandae illo dolor, harum inventore porro at. Est quidem aut ex libero debitis iste ipsum, explicabo quos, illum hic natus, nobis pariatur corporis labore?</span></p>
+								<button class="btn btn_transparent">Подробнее о лечении</button>
+							</div>
+
+							<div id="slide_course-6" class="slide_course hidden">
+								<p class="headline color_white">Болезни кожи</p>
+								<p class="color_white"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic officiis velit aperiam id fugit quas eum iusto libero aliquam deserunt animi perferendis quibusdam, minima quaerat architecto, praesentium, fuga repellat quo!</span><span>Totam alias, doloribus quam atque veniam repudiandae illo dolor, harum inventore porro at. Est quidem aut ex libero debitis iste ipsum, explicabo quos, illum hic natus, nobis pariatur corporis labore?</span></p>
+								<button class="btn btn_transparent">Подробнее о лечении</button>
+							</div>
+
+							<div id="slide_course-7" class="slide_course hidden">
+								<p class="headline color_white">Психотерапия</p>
+								<p class="color_white"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic officiis velit aperiam id fugit quas eum iusto libero aliquam deserunt animi perferendis quibusdam, minima quaerat architecto, praesentium, fuga repellat quo!</span><span>Totam alias, doloribus quam atque veniam repudiandae illo dolor, harum inventore porro at. Est quidem aut ex libero debitis iste ipsum, explicabo quos, illum hic natus, nobis pariatur corporis labore?</span></p>
+								<button class="btn btn_transparent">Подробнее о лечении</button>
+							</div>
+
+							<div id="slide_course-8" class="slide_course hidden">
+								<p class="headline color_white">Лечение детей</p>
+								<p class="color_white"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic officiis velit aperiam id fugit quas eum iusto libero aliquam deserunt animi perferendis quibusdam, minima quaerat architecto, praesentium, fuga repellat quo!</span><span>Totam alias, doloribus quam atque veniam repudiandae illo dolor, harum inventore porro at. Est quidem aut ex libero debitis iste ipsum, explicabo quos, illum hic natus, nobis pariatur corporis labore?</span></p>
+								<button class="btn btn_transparent">Подробнее о лечении</button>
+							</div>							
 						</div>
-					</div>					
-				</div>
-				<!-- ===== лечение по направлениям конец ===== -->
+					</div>	
+
+				</div><!-- ===== treatment courses end===== -->
 
 
 

@@ -1,0 +1,59 @@
+.heal-place {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	@include block_border;
+	@include block_padding;
+	width: 50%;
+	margin-right: 10px;
+		@media screen and (max-width: 768px) {
+			width: 100%;
+			
+			&:nth-child(odd) {
+				margin: 0 0 10px 0;
+			}
+		}
+
+		&:nth-child(even) {
+			margin-right: 0;
+		}
+
+		h2 {
+			width: 100%;
+			margin-bottom: 26px;
+		}
+}
+	
+
+	.heal-place__text {
+		width: 48%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		margin-right: 2%;
+			@media screen and (min-width: 769px) and (max-width: 1150px) {
+				width: 100%;
+				margin: 0;			
+			}
+			@media screen and (min-width: 320px) and (max-width: 579px) {
+				width: 100%;				
+			}
+					
+	}
+	.heal-place__img {
+		width: 48%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		background-size: cover;
+		margin-left: 2%;
+			@media screen and (min-width: 769px) and  (max-width: 1150px) {
+				width: 100%;
+				min-height: 200px;
+				margin: 26px 0 0 0;			
+			}
+			@media screen and (min-width: 319px) and (max-width: 579px) {
+				width: 100%;
+				min-height: 200px;
+				margin: 26px 0 0 0;	
+			}
+			
+	}

@@ -26,6 +26,12 @@
 		background-size: cover;
 		// margin-right: 10px;
 	}
+	.three-photo-holder__single {
+		width: 100%;
+		min-height: 290px;		
+		flex-grow: 1;
+		background-size: cover;
+	}
 
 	// modificators
 	.three-photo-holder__photo-small_left {

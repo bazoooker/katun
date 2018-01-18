@@ -8,12 +8,20 @@
 
 .feedback__item {
 	position: relative;
-	padding: 53px 37px 37px 37px;
-	border: 2px solid #dadada;
-	margin-bottom: 60px;
+    padding: 53px 37px 37px 37px;
+    border: 2px solid #dadada;
+    margin-bottom: 60px;
+    width: 50%;
+    flex-grow: 1;
 		@media screen and (max-width: 768px) {
 		    width: 100%;
 		}
+	&:nth-of-type(odd) {
+		margin-right: 10px;
+		@media screen and (max-width: 768px) {
+		    margin-right: 0;
+		}
+	}
 	&:before {
 		position: absolute;
 		width: 17px;
@@ -30,8 +38,8 @@
 		width: 63px;
 		height:43px;
 		content: "";
-		bottom: -43px;
-		left: 10%;
+		bottom: -41px;
+		left: 37px;
 		background-image: url(/img/icons/feedback-speech-triangle.png);
 		background-repeat: no-repeat;		
 		background-size: contain;
