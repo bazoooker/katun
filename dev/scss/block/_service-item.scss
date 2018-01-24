@@ -1,0 +1,30 @@
+.service-item {
+	flex: 1 1 20%;
+	padding: 15px;
+	background-color: #f0f0f0;
+	border: 2px solid #f0f0f0;
+	border-bottom: 2px solid $color_main;
+	margin: 5px;
+	transition: 300ms;
+	&:hover {
+		border-bottom: 2px solid lightgray;
+		// transform: scale(1.1);
+		max-height: 400px;
+    	z-index: 2;
+	}
+}
+
+.service-item__name {
+	margin: 0 0 15px 0;
+	font-size: 16px;
+	font-weight: bold;
+	color: $color_secondary;
+	// color: #fff;
+	// background-color: $color_main;
+	padding: 15px;
+	margin: 0 -15px;
+}
+.service-item__description {
+	// border: 1px solid gray;
+	// padding: 15px;
+}

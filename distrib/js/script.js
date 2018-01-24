@@ -1,30 +1,82 @@
+// sa script
+$(document).ready(function(){  
+    $('.section-tabs .section-tabs__tabs ul li').click(function(){
+        $('.section-tabs .section-tabs__tabs ul li.active').removeClass('active');
+        $(this).addClass('active');
+        console.log($(this));
+        var index= $(this).index();
+        $('.section-tabs__content .slide').each(function(i,elem) {
+         if (i==index) {
+            elem.style.display = 'block';
+    } else {
+       elem.style.display = 'none';
+       console.log(elem);
+    }
+    // if () {}
+});
+        // section-tabs__content
+        // $( ".slide.slide_food" ).eq(index);
+        console.log($(this).index());
+    });
+});
+// sa end script
+
+// $('.section-tabs .section-tabs__tabs li').click(function(){
+//     $(this).parent().find('li.active').removeClass('active');
+//     $(this).addClass('active');
+//     //
+//     $(this).parent().parent().parent().find('.section-tabs__content .slide').hide();
+//     $(this).parent().parent().parent().find('.section-tabs__content .slide').eq($(this).parent().find('li').index('.active')).show();
+        
+// });
+
+
+
 
 // табы
-function tabSwitch(tabName, slideNumber) {
+// function tabSwitch(tabName, slideNumber) {
+//     console.log('function tabSwitch');
+//     var slidesList = document.querySelectorAll('.slide_'+tabName);
+//     console.log(slidesList); 
+//     console.log('collection of slides done'); 
 
-    var slidesList = document.querySelectorAll('.slide_'+tabName); 
+//     for (var i = 0; i < slidesList.length; i++) {          
+//         $(slidesList[i]).fadeOut(0);            
+//     }
+//     console.log('all slides are removed');
 
-    for (var i = 0; i < slidesList.length; i++) {          
-        $(slidesList[i]).fadeOut(0);            
-    }
+//     var curSlide = document.getElementById('slide_'+tabName+'-'+slideNumber);
+//     console.log('get the slide to show');  
 
-    var curSlide = document.getElementById('slide_'+tabName+'-'+slideNumber);        
-    curSlide.classList.remove('hidden');    
-    $(curSlide).fadeIn(200);             
+//     curSlide.classList.remove('hidden');
+//     console.log('remove its class .hidden'); 
+               
+//     $(curSlide).fadeIn(200);             
+//     console.log('fade it in');            
 
-    var allTabs = document.querySelectorAll('.tab_'+tabName);
+//     var allTabs = document.querySelectorAll('.tab_'+tabName);
+//     console.log('collection of tabs');  
 
-    for (var i = 0; i < allTabs.length; i++) {          
-        $(allTabs[i]).removeClass('active');            
-    }
+//     for (var i = 0; i < allTabs.length; i++) {          
+//         $(allTabs[i]).removeClass('active');            
+//     }
+//     console.log('remove .active from all tabs');  
 
-    event.target.classList.add('active');
-}
+//     var target = event.target;
+//     target.classList.add('active');
+//     console.log('нажатому табу добавлен класс .active');  
+// };
 
 
 
 /* МОДАЛЬНЫЕ ОКНА */
-$(document).ready(function(){        
+$(document).ready(function(){   
+$('.tab.tab_food').click(function(e){
+    // alert('asdsad');
+    $(".tab.tab_food.active").removeClass('active');
+    $(this).addClass('active');
+})
+
     $(".callback-link").on('click', function(){
         var btn = $(this);                        
         $("#overlay").fadeIn(100, function(){

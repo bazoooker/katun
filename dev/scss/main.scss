@@ -2,13 +2,14 @@
 @import "base/reset";
 @import "base/scale";
 @import "base/fonts";
-@import "base/grid";
+
 
 // vars and mixins
 @import "assets/stylesheets/var";
 @import "assets/stylesheets/mixin";
 @import "assets/stylesheets/lightbox.min";
 
+@import "base/grid";
 // cannot be in base section because needs var and mixin
 @import "base/typography"; 
 
@@ -23,6 +24,7 @@
 @import "block/booking-row";
 
 @import "block/section";
+@import "block/block-50-50";
 
 @import "block/resort-permit";
 @import "block/resort-permit-feature";
@@ -48,7 +50,11 @@
 
 @import "block/checklist";
 
-@import "block/services";
+
+// досуг и услуги
+@import "block/services"; /*слайдер доп.услуг, возможно, не будет использоваться*/
+@import "block/services-tiles"; /*плитка доп.услуг*/
+@import "block/service-item"; /*одна плитка доп.услуг*/
 
 @import "block/book-cheaper";
 
@@ -92,3 +98,6 @@
 @import "block/heal-place";
 
 @import "block/lightbox-img";
+@import "block/text-block";
+@import "block/rules";
+@import "block/factors";

@@ -130,28 +130,6 @@ input, select {
   font-weight: normal;
   font-style: normal; }
 
-.flex-start {
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start; }
-
-.flex-end {
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end; }
-
-.pull-right {
-  float: right; }
-
-.pull-left {
-  float: left; }
-
-.hidden {
-  display: none !important; }
-
-.text-center {
-  text-align: center; }
-
 .lb-loader, .lightbox {
   text-align: center;
   line-height: 0; }
@@ -322,6 +300,50 @@ html.lb-disable-scrolling {
   cursor: pointer;
   filter: alpha(Opacity=100);
   opacity: 1; }
+
+.flex-start {
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
+
+.flex-end {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end; }
+
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.hidden {
+  display: none !important; }
+
+.text-center {
+  text-align: center; }
+
+.with-border {
+  border: 2px solid #009e6a; }
+
+.bg_gray {
+  background-color: #f0f0f0; }
+
+.with-padding {
+  padding: 37px 10px 10px 37px; }
+  @media screen and (max-width: 768px) {
+    .with-padding {
+      padding: 40px 10px 10px 20px; } }
+
+.block-border {
+  padding: 37px 10px 10px 37px;
+  border: 2px solid #009e6a;
+  margin-bottom: 10px; }
+  @media screen and (max-width: 768px) {
+    .block-border {
+      padding: 40px 10px 10px 20px; } }
+  .block-border p {
+    margin-bottom: 15px; }
 
 body {
   font-family: 'roboto', sans-serif; }
@@ -1278,7 +1300,92 @@ body {
     .section__part-small_bigger {
       width: 100%; } }
 
+.block-50-50 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap; }
+  @media screen and (max-width: 767px) {
+    .block-50-50 {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap; } }
+
+.block-50-50__text {
+  width: 50%;
+  margin-right: 10px; }
+  @media screen and (max-width: 767px) {
+    .block-50-50__text {
+      width: 100%; } }
+  @media screen and (max-width: 767px) {
+    .block-50-50__text {
+      margin-bottom: 37px; } }
+
+.block-50-50__photo {
+  width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  min-height: 200px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+  @media screen and (max-width: 767px) {
+    .block-50-50__photo {
+      width: 100%; } }
+  .block-50-50__photo a.photo {
+    width: 45%;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-height: 300px;
+    margin: 0 10px 10px 0; }
+    @media screen and (max-width: 1024px) {
+      .block-50-50__photo a.photo {
+        width: 100%;
+        margin: 0 0 10px 0;
+        min-height: 140px;
+        margin: 0;
+        margin-bottom: 10px; } }
+    @media screen and (max-width: 767px) {
+      .block-50-50__photo a.photo {
+        width: 45%;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-height: 300px;
+        margin: 0 10px 10px 0; } }
+    @media screen and (max-width: 470px) {
+      .block-50-50__photo a.photo {
+        width: 100%;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-height: 300px;
+        margin: 0 0 10px 0;
+        min-height: 240px; } }
+    .block-50-50__photo a.photo:nth-child(even) {
+      margin-right: 0; }
+
 .resort-permit {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1288,10 +1395,6 @@ body {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   min-height: 300px;
   height: 100%;
   padding: 37px 10px 10px 37px;
@@ -1302,6 +1405,22 @@ body {
   @media screen and (max-width: 768px) {
     .resort-permit {
       padding: 40px 10px 10px 20px; } }
+  .resort-permit:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1); }
+  .resort-permit h2 {
+    margin-bottom: 37px;
+    z-index: 2;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6); }
+  .resort-permit p {
+    margin-bottom: 15px;
+    z-index: 2;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6); }
   @media screen and (max-width: 768px) {
     .resort-permit {
       height: auto; }
@@ -1382,6 +1501,12 @@ body {
   height: 54px;
   margin-bottom: 16px;
   margin: 0 auto; }
+
+.icon-container_servises-item {
+  width: 63px;
+  height: 54px;
+  margin-bottom: 16px;
+  margin: 20px auto; }
 
 .icon-container_service-feature {
   width: 63px;
@@ -1522,10 +1647,14 @@ textarea {
   @media screen and (max-width: 768px) {
     .treatment-content-text {
       padding: 40px 10px 10px 20px; } }
-  .treatment-content-text .headline {
+  .treatment-content-text .headline:first-child {
     font-size: 18px;
     font-weight: 300;
     margin: 0 0 30px 0; }
+  .treatment-content-text .headline {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 30px 0 30px 0; }
 
 .treatment-course {
   background-image: url(/img/bg/bg-treatment-branches.jpg);
@@ -1752,6 +1881,47 @@ textarea {
 .services_bg-gray {
   background-color: #f0f0f0; }
 
+/*слайдер доп.услуг, возможно, не будет использоваться*/
+.services-tiles {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin: 10px -5px; }
+
+/*плитка доп.услуг*/
+.service-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 20%;
+  -ms-flex: 1 1 20%;
+  flex: 1 1 20%;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border: 2px solid #f0f0f0;
+  border-bottom: 2px solid #009e6a;
+  margin: 5px;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms; }
+  .service-item:hover {
+    border-bottom: 2px solid lightgray;
+    max-height: 400px;
+    z-index: 2; }
+
+.service-item__name {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #007393;
+  padding: 15px;
+  margin: 0 -15px; }
+
+/*одна плитка доп.услуг*/
 .book-cheaper {
   position: relative;
   background-color: #00b2e7;
@@ -1948,7 +2118,8 @@ textarea {
 
 .about-sanatorium {
   padding: 37px 10px 10px 37px;
-  border: 2px solid #009e6a; }
+  border: 2px solid #009e6a;
+  margin-bottom: 10px; }
   @media screen and (max-width: 768px) {
     .about-sanatorium {
       padding: 40px 10px 10px 20px; } }
@@ -2164,14 +2335,21 @@ textarea {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 20px 37px; }
+  font-size: 20px;
+  padding: 20px 57px;
+  min-height: 130px;
+  margin-left: -37px; }
+  @media screen and (max-width: 768px) {
+    .tab_treatment,
+    .tab_documents {
+      min-height: auto; } }
   .tab_treatment:before,
   .tab_documents:before {
     position: absolute;
     top: 50%;
-    right: 20px;
-    width: 5px;
-    height: 5px;
+    right: 25px;
+    width: 12px;
+    height: 12px;
     border-bottom: 2px solid #009e6a;
     border-right: 2px solid #009e6a;
     -webkit-transform: rotate(-45deg);
@@ -2196,9 +2374,9 @@ textarea {
     .tab_documents.active:before {
       position: absolute;
       top: 50%;
-      right: 17px;
-      width: 5px;
-      height: 5px;
+      right: 20px;
+      width: 12px;
+      height: 12px;
       border-bottom: 2px solid #fff;
       border-right: 2px solid #fff;
       -webkit-transform: rotate(-45deg);
@@ -2207,6 +2385,10 @@ textarea {
       content: ""; }
 
 /*стили всех табов*/
+.slide .headline {
+  font-size: 18px;
+  margin-bottom: 10px; }
+
 .slide_food {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2246,10 +2428,6 @@ textarea {
   @media screen and (max-width: 480px) {
     .slide_course {
       padding: 20px 20px 20px 20px; } }
-  .slide_course .headline {
-    margin-bottom: 28px;
-    font-size: 20px;
-    font-weight: 400; }
   .slide_course p {
     margin-bottom: 18px;
     line-height: 21px;
@@ -2336,8 +2514,13 @@ textarea {
       min-height: 100px;
       margin-bottom: 20px; } }
 
-.documents h2 {
-  margin: 37px 0 37px 37px; }
+.documents {
+  padding: 37px 0 0 37px; }
+  .documents .section-tabs__content {
+    border: 2px solid #009e6a;
+    padding: 37px; }
+  .documents h2 {
+    margin: 0 0 37px 0; }
 
 .feedback {
   margin-bottom: 37px; }
@@ -2935,3 +3118,20 @@ textarea {
   background-size: cover;
   background-position: 50% 20%;
   text-decoration: none; }
+
+.text-block {
+  padding: 37px 10px 10px 37px; }
+  @media screen and (max-width: 768px) {
+    .text-block {
+      padding: 40px 10px 10px 20px; } }
+  .text-block h2 {
+    margin-bottom: 26px; }
+
+.rules {
+  margin: 10px 0 10px -37px;
+  padding: 50px;
+  line-height: 24px;
+  background-color: #f0f0f0; }
+
+.factors h2 {
+  margin-bottom: 26px; }

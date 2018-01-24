@@ -1,0 +1,7 @@
+.text-block {
+	@include block-padding;
+
+	h2 {
+		margin-bottom: 26px;
+	}	
+}

@@ -61,12 +61,12 @@
 				margin-right: -20px;			
 			}
 	}
+	
 
 	.tab_treatment,
 	.tab_documents {
 	position: relative;
-	background-color: #e5f5f0;
-	// border-left: 3px solid #e5f5f0;
+	background-color: #e5f5f0;	
 	cursor: pointer;
 	list-style: none;
 	color: $color_main;
@@ -75,14 +75,22 @@
 	display: flex;
 	flex-direcrion: row;
 	align-items: center;
-	padding: 20px 37px;
+	font-size: 20px;
+	padding: 20px 57px;
+	min-height: 130px;
+	margin-left: -37px;
+		@media screen and (max-width: 768px) {
+			min-height: auto;	
+		}
+
+	
 
 	&:before {
 		position: absolute;
 		top: 50%;
-		right: 20px;
-		width: 5px;
-		height: 5px;
+		right: 25px;
+		width: 12px;
+		height: 12px;
 		border-bottom: 2px solid $color_main;
 		border-right: 2px solid $color_main;
 		transform: rotate(-45deg);
@@ -103,9 +111,9 @@
 		&:before {
 			position: absolute;
 			top: 50%;
-			right: 17px;
-			width: 5px;
-			height: 5px;
+			right: 20px;
+			width: 12px;
+			height: 12px;
 			border-bottom: 2px solid #fff;
 			border-right: 2px solid #fff;
 			transform: rotate(-45deg);

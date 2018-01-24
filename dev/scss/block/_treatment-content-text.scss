@@ -2,9 +2,14 @@
 	// padding: 20px 37px;
 	@include block_padding;
 	@include block_border;
-	.headline {
+	.headline:first-child {
 		font-size: 18px;
 		font-weight: 300;
 		margin: 0 0 30px 0;
+	}
+	.headline {
+		font-size: 18px;
+		font-weight: 300;
+		margin: 30px 0 30px 0;
 	}	
 }

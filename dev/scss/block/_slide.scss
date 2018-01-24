@@ -1,8 +1,16 @@
 // block
-.slide{}
+.slide{
+
+	.headline {
+		font-size: 18px;
+		margin-bottom: 10px;	
+	}	
+}
+	
 
 .slide_course {}
 .slide_treatment {}
+.slide_documents {}
 .slide_food {
 	display: flex;   
     flex-direction: row;
@@ -25,15 +33,12 @@
 		@media screen and (max-width: 480px) {
 			padding: 20px 20px 20px 20px;
 		}
-
-	.headline {
-		margin-bottom: 28px;
-		font-size: 20px;
-		font-weight: 400;
-	}
+	
 	p {
 		margin-bottom: 18px;
 		line-height: 21px;
 		font-weight: 400;
 	}
 }
+
+
