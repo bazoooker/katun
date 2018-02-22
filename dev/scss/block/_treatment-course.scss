@@ -16,8 +16,54 @@
 		margin-bottom: 17px;
 		padding-left: 37px;
 	}
+
+
+	// .section-tabs__content {
+	// 	@include block-border;
+	// 	padding: 37px;
+	// }
+
+	// .section-tabs {		
+	// 	flex-direction: column;
+
+	// 		@media screen and (max-width: 768px) {
+	// 			flex-direction: column;
+	// 		}
+	// 	}
+
+	.section-tabs__tabs {		
+		flex: 1 1 30%;
+		margin-right: 46px;
+
+			// ul {
+			// 	display: flex;
+			// 	flex-flow: row wrap;
+			// 		@media screen and (max-width: 768px) {
+			// 			flex-flow: column nowrap;
+			// 		}
+			// }
+
+			// @media screen and (max-width: 768px) {
+			// 	width: 100%;
+			// }
+
+			// & > ul {
+			// 	@media screen and (max-width: 768px) {
+			// 		display: none;
+			// 	}				
+			// }		
+		}
+
+	// .section-tabs__content {
+	// 	width: 100%;
+	// 	flex-grow: 1;
+	// 	flex-shrink: 1;		
+
+	// 		@media screen and (max-width: 768px) {
+	// 			width: 100%;
+	// 		}
+	// 		@media screen and (max-width: 768px) {
+	// 			display: none;
+	// 		}
+	// 	}
 }
-.treatment-course__tabs{}
-// .treatment-course__tab-contents{
-	
-// }

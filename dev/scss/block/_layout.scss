@@ -6,7 +6,6 @@ html, body {
 }
 body {
 	-webkit-text-size-adjust: 100%;
-	font-family:'Roboto';
 	font-style: normal;
 	font-weight: normal;
 	padding:0px;
@@ -100,7 +99,7 @@ body {
 }
 #header .bookingbutton span{
 	color:#009e6a;
-	font-size:13px;
+	font-size:15px;
 }
 #header .phonebutton {
 	margin-top:38px;
@@ -122,7 +121,7 @@ body {
 }
 #header .phonebutton span{
 	color:#009e6a;
-	font-size:13px;
+	font-size:15px;
 }
 .clear {
 	clear:both;
@@ -250,7 +249,7 @@ body {
 #footer .logo span{
 	display:block;
 	color:#fff;
-	font-size:12px;
+	font-size:13px;
 	padding:20px 0 0 0px;
 }
 #footer .bottommenu {
@@ -391,7 +390,7 @@ border-radius: 3px;
 }
 .booking .form  input[type=submit]{
 -webkit-appearance: none;
-	font-family:Roboto;
+	// font-family:;
 -webkit-border-radius: 3px;
 -moz-border-radius: 3px;
 border-radius: 3px;
@@ -516,7 +515,7 @@ border-radius: 3px;
 }
 .mobilemenu ul li a{
 	color:#fff;
-	font-family:'Roboto';
+	// font-family:'Roboto';
 	display:block;
 	font-size:20px;
 	text-decoration:none;

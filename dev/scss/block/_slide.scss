@@ -2,9 +2,32 @@
 .slide{
 
 	.headline {
-		font-size: 18px;
-		margin-bottom: 10px;	
-	}	
+	    font-size: 20px;
+    	margin-bottom: 10px;
+    	margin: 20px 0 30px 0;
+    	text-transform: uppercase;
+    	font-weight: 600;
+    	&:first-child {
+    		margin-top: 0;
+    	}
+	}
+
+	ul li {
+    		list-style: none;
+    		position: relative;
+    		padding-left: 10px;
+    		margin-bottom: 10px;
+    		&:before {
+				position: absolute;
+				left: 0;
+				top: 0;
+				content: '-';
+    		}
+    	}
+
+	// p {
+	// 	margin-bottom: 15px;
+	// }	
 }
 	
 
@@ -15,6 +38,10 @@
 	display: flex;   
     flex-direction: row;
     flex-wrap: nowrap;
+
+    @media screen and (max-width: 1000px) {
+    	flex-direction: column;
+    }
 }
 .slide_factor {
     display: flex;   
@@ -22,7 +49,7 @@
     flex-wrap: nowrap;
 }
 .slide_course {
-	padding-left: 47px;
+	// padding-left: 47px;
 
 		@media screen and (max-width: 768px) {
 			padding: 37px 37px 37px 37px;

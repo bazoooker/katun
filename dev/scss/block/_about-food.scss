@@ -3,90 +3,19 @@
 	@include block_border;
 	margin-bottom: 10px;
 
-	h2,p {
-		padding-bottom: 26px;
+	// h2,p {
+	// 	padding-bottom: 26px;
+	// }
+
+}
+
+	.about-food {}
+	.about-food__tabs {
+		padding-right: 25px;
 	}
-
-}
-
-.section-tabs {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-		@media screen and (max-width: 768px) {
-			flex-direction: column;
-		}
-}
-.section-tabs__tabs {
-	width: 25%;
-	flex-grow: 1;
-	flex-shrink: 1;
-	margin-right: 20px;
-		@media screen and (max-width: 768px) {
-			width: 100%;
-		}
-}
-.section-tabs__content {
-	width: 75%;
-	flex-grow: 1;
-	flex-shrink: 1;
-		@media screen and (max-width: 768px) {
-			width: 100%;
-		}
-}
-
-
-
-
-
-.tab-slide {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-		@media screen and (max-width: 1100px) {
-			flex-direction: column;
-		}
-}
-.tab-slide__text {
-	position: relative;
-	width: 60%;
-	margin-right: 20px;
-		.btn_outline {
-		    position: absolute;
-		    left: 0;
-		    bottom: 0;
-		}
-		@media screen and (max-width: 1100px) {
-			width: 100%;
-		    padding-bottom: 35px;
-		    margin: 0 0 35px 0;
-		}
-}
-.tab-slide__photo {
-	width: 40%;
-		@media screen and (max-width: 1100px) {
-			width: 100%;
-		}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.about-food {}
-.about-food__tabs {
-	padding-right: 25px;
-}
-.about-food__text {
-	// padding: 0 37px;
-}
-.about-food__photos {
-	padding-left: 25px;
-}
+	.about-food__text {
+		// padding: 0 37px;
+	}
+	.about-food__photos {
+		padding-left: 25px;
+	}

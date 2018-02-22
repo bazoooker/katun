@@ -1,0 +1,75 @@
+#mini_tab {
+
+	 @media screen and (min-width: 769px) {
+    	display: none;
+    }
+
+}
+
+
+
+
+// общие стили для собранного аккордеона
+.cd-accordion-menu .has-children {	
+    margin-bottom: 6px;
+    // margin-left: -14px;
+    // margin-right: -4px;
+    list-style: none;
+
+	.slide_children {
+		margin: 10px 15px;
+	}
+   
+}
+
+.has-children label {
+	position: relative;
+	display: block;
+	padding: 15px 15px;
+	background: #009e6a;
+	color: #fff;
+	cursor: pointer;
+	
+	&:after {
+		content: '';
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		right: 15px;
+		top: 50%;
+		transform: translateY(-50%) rotate(45deg);
+		border-bottom: 2px solid #fff;
+		border-right: 2px solid #fff;
+		transition: 200ms;
+
+	}	
+}
+
+.has-children.active label {
+	
+	&:after {
+		content: '';
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		right: 15px;
+		top: 50%;
+		transform: translateY(-50%) rotate(-135deg);
+		border-bottom: 2px solid #fff;
+		border-right: 2px solid #fff;
+
+	}
+	
+}
+
+
+// аккордеон документов
+
+.documents {
+	.cd-accordion-menu .has-children {		    
+	    // margin-left: -37px;
+	}
+	.has-children label {
+		padding: 15px 37px;
+	}
+}

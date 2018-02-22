@@ -1,0 +1,78 @@
+.lead {
+	display: flex;
+	flex-flow: row nowarap;
+	justify-content: stretch;
+	align-items: center;
+	background: #027594 url(/img/bg/bg_line-diagonal.png);
+    font-size: 18px;
+    color: #fff;
+    padding: 37px;
+    flex: 1 1 100%;    
+    background-size: cover;    
+}
+
+.lead-gray {
+    position: relative;
+	background: #eaeaea;
+    font-size: 18px;
+
+    padding: 20px;
+    margin-bottom: 40px;
+
+    border-left: 2px solid $color_secondary;
+
+    &:hover .lead-gray__num-days {
+        box-shadow: 0 7px 13px rgba(0, 0, 0, 0.3);
+        transform: translateY(-55%) translateX(50%);
+        opacity: 1;
+    }
+
+    h3,p {
+    	color: $color_secondary;
+    }
+
+    h3 {
+		font-size: 20px;
+    }
+
+    .lead-gray__num-days {
+        position: absolute;
+
+        top: 0;
+        right: 0;
+
+        background: #009e6a;
+        color: #fff;
+
+        width: 96px;
+        height: 96px;
+
+        box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+        opacity: .9;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 50%;
+
+        transform: translateY(-50%) translateX(50%);
+        transition: all 200ms;
+        .bigger {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        span {
+            font-size: 13px;
+            display: block;
+        }
+    }
+
+    .lead-gray__price-treat {
+        display: inline-block;
+        margin-left: 30px;
+        color: $color_secondary;
+    }
+}
+

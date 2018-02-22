@@ -3,7 +3,7 @@
 	flex-wrap: wrap;
 
 	h2 {
-		margin-bottom: 32px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -13,10 +13,10 @@
 	background: #027594 url(/img/bg/bg_line-diagonal.png);
 	background-size: 350px;
 	flex-grow: 1;
-	width: 48%;
+	width: 48.1%;
     margin-right: 10px;
     margin-bottom: 10px;
-    max-height: 235px;
+    // max-height: 235px;
 		@media screen and (max-width: 768px) {
 			width: 100%;
 			margin-right: 0;
@@ -29,10 +29,11 @@
 .photoalbum__photo {
 	flex-grow: 1;
 	width: 22.8%;
-	margin-right: 10px;
-	height: 100%;
-	min-height: 225px;
+	margin-right: 10px;	
+	min-height: 292px;
 	margin-bottom: 10px;
+	height: auto;
+	background-size: cover;
 	
 		@media screen and (max-width: 768px) {
 			width: 48%;

@@ -1,0 +1,18 @@
+.calculate{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+.calculate__btn{
+	flex: 0 0 35%;
+}
+.calculate__price{
+	flex: 0 0 20%;
+	color: $color_secondary;
+	font-weight: 400;
+}
+
+.calculate__price_big {
+	font-size: 24px;
+	font-weight: 600;
+}

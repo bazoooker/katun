@@ -8,8 +8,10 @@
 }
 
 	.block-50-50__text{
-		width: 50%;
-		margin-right: 10px;
+		    width: 50%;
+		    margin-right: 10px;
+		    display: flex;
+		    flex-flow: column nowrap;
 			@media screen and (max-width: 767px) {							
 				width: 100%;
 			}
@@ -20,13 +22,12 @@
 
 	.block-50-50__photo{
 		width: 50%;
-
 		display: flex;
 		flex-flow: row wrap;
-		// min-height: 100%;
-		min-height: 200px;
-		
+		min-height: 200px;		
 		justify-content: flex-start;
+		margin-bottom: -10px;
+
 			@media screen and (max-width: 767px) {							
 				width: 100%;
 			}
@@ -36,6 +37,9 @@
 			flex-grow: 1;
 			max-height: 300px;
 			margin: 0 10px 10px 0;
+			background-size: cover;
+			background-position: 50% 50%;
+			min-height: 170px;
 				@media screen and (max-width: 1024px) {							
 					width: 100%;
 					margin: 0 0 10px 0;	

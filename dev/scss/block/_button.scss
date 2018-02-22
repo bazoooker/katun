@@ -1,6 +1,6 @@
 // block
 .btn {
-	padding: 9px 16px;
+	padding: 9px 10px;
 	border-radius: 5px;
 	text-decoration: none;
 	cursor: pointer;
@@ -8,7 +8,7 @@
 	display: inline-block;
 	transition: 300ms;
 	overflow: hidden;
-	font-size: 14px;
+	font-size: 17px;
 
 	// делаем кнопки поверх всех :after и :before
 	z-index: 1; 
@@ -31,24 +31,32 @@
 
 // modificators
 .btn_color-main {
-	color: #fff;
+	color: #fff;	
 	background-color: $color_main;
+
+	a {color: #fff; text-decoration: none;}
 }
 .btn_color-secondary {
 	position: relative;
 	color: #fff;
 	background-color: $color_secondary;
+
+	a {color: #fff; text-decoration: none;}
 }
 .btn_gradient {
 	color: #fff;
 	@include gradient;
+
+	a {color: #fff; text-decoration: none;}
 }
 .btn_transparent {
 	color: #fff;
 	background-color: transparent;
 	border: 1px solid #fff;
 	min-width: 183px;
-	text-align: center;		
+	text-align: center;
+
+	a {color: #fff; text-decoration: none;}		
 }
 .btn_outline {
 	color: $color_main;
@@ -56,10 +64,21 @@
 	border: 1px solid $color_main;
 	min-width: 183px;
 	text-align: center;
+	a {color: $color_main; text-decoration: none;}
 	&:after	 {
 		background-color: $color_main;
 		opacity: .1
 	}
+}
+
+.btn_size-s {}
+.btn_size-m {}
+.btn_size-l {
+	padding: 13px 50px;
+}
+.btn_size-xl {
+    padding: 20px 30px;
+    text-transform: uppercase;
 }
 
 
@@ -74,8 +93,8 @@
 	color: #fff;		
 }
 
-.btn_color-secondary:hover {
-	background-color: #fff;
-	color: $color_main;
-}
+// .btn_color-secondary:hover {
+// 	background-color: #fff;
+// 	color: $color_main;
+// }
 

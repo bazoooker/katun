@@ -63,6 +63,10 @@
 					margin: 0 auto;
 					margin-bottom: 15px;
 				}
+
+			img {
+				border-radius: 50%;
+			}
 		}
 		.director-text {
 			display: flex;
@@ -73,7 +77,7 @@
 			.director-name{
 				margin-bottom: 20px;
 				color: $color_secondary;
-				font-size: 15px;
+				font-size: 17px;
 				font-weight: 600;
 					@media screen and (max-width: 417px) {
 						text-align: center;
@@ -82,7 +86,7 @@
 			.director-position{
 				margin-bottom: 20px;
 				color: $color_secondary;
-				font-size: 14px;				
+				font-size: 16px;				
 				font-weight: 400;
 					@media screen and (max-width: 417px) {
 						text-align: center;
@@ -92,7 +96,7 @@
 			}
 			.director-contacts{
 				color: #3b3b3b;
-				font-size: 14px;
+				font-size: 16px;
 					@media screen and (max-width: 417px) {
 						text-align: center;
 					}
@@ -120,7 +124,7 @@
 			}
 
 		.form-left{
-			width: 50%;
+			width: 60%;
 			margin-right: 10px;
 				@media screen and (max-width: 800px) {
 					width: 100%;
@@ -130,7 +134,7 @@
 				}
 		}
 		.form-right{
-			width: 50%;
+			width: 40%;
 				@media screen and (max-width: 800px) {
 					width: 100%;
 				}
@@ -163,7 +167,7 @@
 		input[type=submit] {
 			background-color: $color_secondary;
 			color: #fff;
-			font-size: 14px;
+			font-size: 16px;
 			// font-weight: 400;
 			cursor: pointer;
 			transition: 300ms;

@@ -54,3 +54,12 @@
 			margin: 0 auto;
 			margin-bottom: 16px;									
 		}
+
+		.icon-container_tab-icon {
+			flex-basis: 1 1 30%;
+			width: 54px;
+		    height: 54px;		    
+		    margin: 10px 20px;
+		    border-radius: 50%;
+		    background-color: lightgray;
+		}
